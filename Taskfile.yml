@@ -1,0 +1,21 @@
+# https://taskfile.dev
+
+version: '3'
+tasks:
+  build clean:
+    cmds:
+      - make clean -j4
+    silent: true
+
+  build all:
+    cmds:
+      - make -j4
+    silent: true
+
+  stflash:
+    cmds: 
+      - make stflash -j4
+  
+  JLink Flash:
+    cmds:
+      - make jflash -j4
