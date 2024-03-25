@@ -20,8 +20,8 @@
             "name": "STM32_mode",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/Core/Inc",
-                "${workspaceFolder}/Core/Src",
+                "${workspaceFolder}/Core/Inc/",
+                "${workspaceFolder}/Core/Src/",
                 "C:\\Program Files (x86)\\Arm GNU Toolchain arm-none-eabi\\13.2 Rel1\\arm-none-eabi\\include",
                 "C:\\Program Files (x86)\\Arm GNU Toolchain arm-none-eabi\\13.2 Rel1\\**",
                 "${workspaceFolder}/Drivers/STM32F4xx_HAL_Driver/Inc/**",
@@ -40,7 +40,7 @@
                 "-mthumb",
                 "-mfloat-abi=hard"
             ],
-            "intelliSenseMode": "windows-gcc-arm64"
+            "intelliSenseMode": "clang-arm64"
         }
     ],
     "version": 4

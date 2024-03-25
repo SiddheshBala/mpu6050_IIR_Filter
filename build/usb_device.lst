@@ -1,0 +1,308 @@
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 6
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"usb_device.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "USB_DEVICE/App/usb_device.c"
+  20              		.global	hUsbDeviceHS
+  21              		.section	.bss.hUsbDeviceHS,"aw",%nobits
+  22              		.align	2
+  25              	hUsbDeviceHS:
+  26 0000 00000000 		.space	732
+  26      00000000 
+  26      00000000 
+  26      00000000 
+  26      00000000 
+  27              		.section	.text.MX_USB_DEVICE_Init,"ax",%progbits
+  28              		.align	1
+  29              		.global	MX_USB_DEVICE_Init
+  30              		.syntax unified
+  31              		.thumb
+  32              		.thumb_func
+  34              	MX_USB_DEVICE_Init:
+  35              	.LFB138:
+   1:USB_DEVICE/App/usb_device.c **** /* USER CODE BEGIN Header */
+   2:USB_DEVICE/App/usb_device.c **** /**
+   3:USB_DEVICE/App/usb_device.c ****   ******************************************************************************
+   4:USB_DEVICE/App/usb_device.c ****   * @file           : usb_device.c
+   5:USB_DEVICE/App/usb_device.c ****   * @version        : v1.0_Cube
+   6:USB_DEVICE/App/usb_device.c ****   * @brief          : This file implements the USB Device
+   7:USB_DEVICE/App/usb_device.c ****   ******************************************************************************
+   8:USB_DEVICE/App/usb_device.c ****   * @attention
+   9:USB_DEVICE/App/usb_device.c ****   *
+  10:USB_DEVICE/App/usb_device.c ****   * Copyright (c) 2024 STMicroelectronics.
+  11:USB_DEVICE/App/usb_device.c ****   * All rights reserved.
+  12:USB_DEVICE/App/usb_device.c ****   *
+  13:USB_DEVICE/App/usb_device.c ****   * This software is licensed under terms that can be found in the LICENSE file
+  14:USB_DEVICE/App/usb_device.c ****   * in the root directory of this software component.
+  15:USB_DEVICE/App/usb_device.c ****   * If no LICENSE file comes with this software, it is provided AS-IS.
+  16:USB_DEVICE/App/usb_device.c ****   *
+  17:USB_DEVICE/App/usb_device.c ****   ******************************************************************************
+  18:USB_DEVICE/App/usb_device.c ****   */
+  19:USB_DEVICE/App/usb_device.c **** /* USER CODE END Header */
+  20:USB_DEVICE/App/usb_device.c **** 
+  21:USB_DEVICE/App/usb_device.c **** /* Includes ------------------------------------------------------------------*/
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s 			page 2
+
+
+  22:USB_DEVICE/App/usb_device.c **** 
+  23:USB_DEVICE/App/usb_device.c **** #include "usb_device.h"
+  24:USB_DEVICE/App/usb_device.c **** #include "usbd_core.h"
+  25:USB_DEVICE/App/usb_device.c **** #include "usbd_desc.h"
+  26:USB_DEVICE/App/usb_device.c **** #include "usbd_cdc.h"
+  27:USB_DEVICE/App/usb_device.c **** #include "usbd_cdc_if.h"
+  28:USB_DEVICE/App/usb_device.c **** 
+  29:USB_DEVICE/App/usb_device.c **** /* USER CODE BEGIN Includes */
+  30:USB_DEVICE/App/usb_device.c **** 
+  31:USB_DEVICE/App/usb_device.c **** /* USER CODE END Includes */
+  32:USB_DEVICE/App/usb_device.c **** 
+  33:USB_DEVICE/App/usb_device.c **** /* USER CODE BEGIN PV */
+  34:USB_DEVICE/App/usb_device.c **** /* Private variables ---------------------------------------------------------*/
+  35:USB_DEVICE/App/usb_device.c **** 
+  36:USB_DEVICE/App/usb_device.c **** /* USER CODE END PV */
+  37:USB_DEVICE/App/usb_device.c **** 
+  38:USB_DEVICE/App/usb_device.c **** /* USER CODE BEGIN PFP */
+  39:USB_DEVICE/App/usb_device.c **** /* Private function prototypes -----------------------------------------------*/
+  40:USB_DEVICE/App/usb_device.c **** 
+  41:USB_DEVICE/App/usb_device.c **** /* USER CODE END PFP */
+  42:USB_DEVICE/App/usb_device.c **** 
+  43:USB_DEVICE/App/usb_device.c **** /* USB Device Core handle declaration. */
+  44:USB_DEVICE/App/usb_device.c **** USBD_HandleTypeDef hUsbDeviceHS;
+  45:USB_DEVICE/App/usb_device.c **** 
+  46:USB_DEVICE/App/usb_device.c **** /*
+  47:USB_DEVICE/App/usb_device.c ****  * -- Insert your variables declaration here --
+  48:USB_DEVICE/App/usb_device.c ****  */
+  49:USB_DEVICE/App/usb_device.c **** /* USER CODE BEGIN 0 */
+  50:USB_DEVICE/App/usb_device.c **** 
+  51:USB_DEVICE/App/usb_device.c **** /* USER CODE END 0 */
+  52:USB_DEVICE/App/usb_device.c **** 
+  53:USB_DEVICE/App/usb_device.c **** /*
+  54:USB_DEVICE/App/usb_device.c ****  * -- Insert your external function declaration here --
+  55:USB_DEVICE/App/usb_device.c ****  */
+  56:USB_DEVICE/App/usb_device.c **** /* USER CODE BEGIN 1 */
+  57:USB_DEVICE/App/usb_device.c **** 
+  58:USB_DEVICE/App/usb_device.c **** /* USER CODE END 1 */
+  59:USB_DEVICE/App/usb_device.c **** 
+  60:USB_DEVICE/App/usb_device.c **** /**
+  61:USB_DEVICE/App/usb_device.c ****   * Init USB device Library, add supported class and start the library
+  62:USB_DEVICE/App/usb_device.c ****   * @retval None
+  63:USB_DEVICE/App/usb_device.c ****   */
+  64:USB_DEVICE/App/usb_device.c **** void MX_USB_DEVICE_Init(void)
+  65:USB_DEVICE/App/usb_device.c **** {
+  36              		.loc 1 65 1
+  37              		.cfi_startproc
+  38              		@ args = 0, pretend = 0, frame = 0
+  39              		@ frame_needed = 1, uses_anonymous_args = 0
+  40 0000 80B5     		push	{r7, lr}
+  41              	.LCFI0:
+  42              		.cfi_def_cfa_offset 8
+  43              		.cfi_offset 7, -8
+  44              		.cfi_offset 14, -4
+  45 0002 00AF     		add	r7, sp, #0
+  46              	.LCFI1:
+  47              		.cfi_def_cfa_register 7
+  66:USB_DEVICE/App/usb_device.c ****   /* USER CODE BEGIN USB_DEVICE_Init_PreTreatment */
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s 			page 3
+
+
+  67:USB_DEVICE/App/usb_device.c **** 
+  68:USB_DEVICE/App/usb_device.c ****   /* USER CODE END USB_DEVICE_Init_PreTreatment */
+  69:USB_DEVICE/App/usb_device.c **** 
+  70:USB_DEVICE/App/usb_device.c ****   /* Init Device Library, add supported class and start the library. */
+  71:USB_DEVICE/App/usb_device.c ****   if (USBD_Init(&hUsbDeviceHS, &HS_Desc, DEVICE_HS) != USBD_OK)
+  48              		.loc 1 71 7
+  49 0004 0122     		movs	r2, #1
+  50 0006 1249     		ldr	r1, .L7
+  51 0008 1248     		ldr	r0, .L7+4
+  52 000a FFF7FEFF 		bl	USBD_Init
+  53 000e 0346     		mov	r3, r0
+  54              		.loc 1 71 6 discriminator 1
+  55 0010 002B     		cmp	r3, #0
+  56 0012 01D0     		beq	.L2
+  72:USB_DEVICE/App/usb_device.c ****   {
+  73:USB_DEVICE/App/usb_device.c ****     Error_Handler();
+  57              		.loc 1 73 5
+  58 0014 FFF7FEFF 		bl	Error_Handler
+  59              	.L2:
+  74:USB_DEVICE/App/usb_device.c ****   }
+  75:USB_DEVICE/App/usb_device.c ****   if (USBD_RegisterClass(&hUsbDeviceHS, &USBD_CDC) != USBD_OK)
+  60              		.loc 1 75 7
+  61 0018 0F49     		ldr	r1, .L7+8
+  62 001a 0E48     		ldr	r0, .L7+4
+  63 001c FFF7FEFF 		bl	USBD_RegisterClass
+  64 0020 0346     		mov	r3, r0
+  65              		.loc 1 75 6 discriminator 1
+  66 0022 002B     		cmp	r3, #0
+  67 0024 01D0     		beq	.L3
+  76:USB_DEVICE/App/usb_device.c ****   {
+  77:USB_DEVICE/App/usb_device.c ****     Error_Handler();
+  68              		.loc 1 77 5
+  69 0026 FFF7FEFF 		bl	Error_Handler
+  70              	.L3:
+  78:USB_DEVICE/App/usb_device.c ****   }
+  79:USB_DEVICE/App/usb_device.c ****   if (USBD_CDC_RegisterInterface(&hUsbDeviceHS, &USBD_Interface_fops_HS) != USBD_OK)
+  71              		.loc 1 79 7
+  72 002a 0C49     		ldr	r1, .L7+12
+  73 002c 0948     		ldr	r0, .L7+4
+  74 002e FFF7FEFF 		bl	USBD_CDC_RegisterInterface
+  75 0032 0346     		mov	r3, r0
+  76              		.loc 1 79 6 discriminator 1
+  77 0034 002B     		cmp	r3, #0
+  78 0036 01D0     		beq	.L4
+  80:USB_DEVICE/App/usb_device.c ****   {
+  81:USB_DEVICE/App/usb_device.c ****     Error_Handler();
+  79              		.loc 1 81 5
+  80 0038 FFF7FEFF 		bl	Error_Handler
+  81              	.L4:
+  82:USB_DEVICE/App/usb_device.c ****   }
+  83:USB_DEVICE/App/usb_device.c ****   if (USBD_Start(&hUsbDeviceHS) != USBD_OK)
+  82              		.loc 1 83 7
+  83 003c 0548     		ldr	r0, .L7+4
+  84 003e FFF7FEFF 		bl	USBD_Start
+  85 0042 0346     		mov	r3, r0
+  86              		.loc 1 83 6 discriminator 1
+  87 0044 002B     		cmp	r3, #0
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s 			page 4
+
+
+  88 0046 01D0     		beq	.L6
+  84:USB_DEVICE/App/usb_device.c ****   {
+  85:USB_DEVICE/App/usb_device.c ****     Error_Handler();
+  89              		.loc 1 85 5
+  90 0048 FFF7FEFF 		bl	Error_Handler
+  91              	.L6:
+  86:USB_DEVICE/App/usb_device.c ****   }
+  87:USB_DEVICE/App/usb_device.c **** 
+  88:USB_DEVICE/App/usb_device.c ****   /* USER CODE BEGIN USB_DEVICE_Init_PostTreatment */
+  89:USB_DEVICE/App/usb_device.c **** 
+  90:USB_DEVICE/App/usb_device.c ****   /* USER CODE END USB_DEVICE_Init_PostTreatment */
+  91:USB_DEVICE/App/usb_device.c **** }
+  92              		.loc 1 91 1
+  93 004c 00BF     		nop
+  94 004e 80BD     		pop	{r7, pc}
+  95              	.L8:
+  96              		.align	2
+  97              	.L7:
+  98 0050 00000000 		.word	HS_Desc
+  99 0054 00000000 		.word	hUsbDeviceHS
+ 100 0058 00000000 		.word	USBD_CDC
+ 101 005c 00000000 		.word	USBD_Interface_fops_HS
+ 102              		.cfi_endproc
+ 103              	.LFE138:
+ 105              		.text
+ 106              	.Letext0:
+ 107              		.file 2 "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.2 Rel1/arm-none-eabi/include/ma
+ 108              		.file 3 "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.2 Rel1/arm-none-eabi/include/sy
+ 109              		.file 4 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h"
+ 110              		.file 5 "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h"
+ 111              		.file 6 "USB_DEVICE/App/usbd_desc.h"
+ 112              		.file 7 "USB_DEVICE/App/usbd_cdc_if.h"
+ 113              		.file 8 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h"
+ 114              		.file 9 "Core/Inc/main.h"
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 usb_device.c
+C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s:25     .bss.hUsbDeviceHS:00000000 hUsbDeviceHS
+C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s:22     .bss.hUsbDeviceHS:00000000 $d
+C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s:28     .text.MX_USB_DEVICE_Init:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s:34     .text.MX_USB_DEVICE_Init:00000000 MX_USB_DEVICE_Init
+C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s:98     .text.MX_USB_DEVICE_Init:00000050 $d
+                           .group:00000000 wm4.0.f079ee757cd02b273648dd4f0fb0fb55
+                           .group:00000000 wm4.stm32f4xx.h.38.d053a70ce905afacf9f39dda4c23396b
+                           .group:00000000 wm4.stm32f429xx.h.34.42df97e3bab45b53f4e57c4e9dde2c7f
+                           .group:00000000 wm4._newlib_version.h.4.6d111ab2e95434b664b53815e5c8ccba
+                           .group:00000000 wm4.features.h.33.2eefb68b261e70563a8ac654e712169f
+                           .group:00000000 wm4._default_types.h.15.247e5cd201eca3442cbf5404108c4935
+                           .group:00000000 wm4._intsup.h.10.48bafbb683905c4daa4565a85aeeb264
+                           .group:00000000 wm4._stdint.h.10.c24fa3af3bc1706662bb5593a907e841
+                           .group:00000000 wm4.stdint.h.23.d53047a68f4a85177f80b422d52785ed
+                           .group:00000000 wm4.cmsis_version.h.32.0ac195c83bb4537824e6ad1c47474b79
+                           .group:00000000 wm4.core_cm4.h.66.e4ff136c4a17abc46741866f64f8e729
+                           .group:00000000 wm4.cmsis_gcc.h.26.498d0ad17a45fc9ef20fdc01caf02259
+                           .group:00000000 wm4.core_cm4.h.174.62be9b4588d49bed18171771001331df
+                           .group:00000000 wm4.mpu_armv7.h.32.83326921a797fa9d6f70449916b4b839
+                           .group:00000000 wm4.stm32f429xx.h.1024.d29798e268c99a104baf1d225206508d
+                           .group:00000000 wm4.stm32f4xx.h.195.a4b8bf80f37cc96981498656ffe5f588
+                           .group:00000000 wm4.stm32f4xx_hal_conf.h.25.47f9051bf4ec028d46a7e2405ed07388
+                           .group:00000000 wm4.stm32_hal_legacy.h.22.a3518bfca5d6be2a3e3116a49624c24d
+                           .group:00000000 wm4.stddef.h.39.0dc9006b34572d4d9cae4c8b422c4971
+                           .group:00000000 wm4.stm32f4xx_hal_def.h.58.3cb484e92e5ccf2e55312a4714e27917
+                           .group:00000000 wm4.stm32f4xx_hal_rcc_ex.h.20.ffb2e3f871e1d4b256123f825b3acaea
+                           .group:00000000 wm4.stm32f4xx_hal_rcc.h.106.7a3b8fae3878f325ccf2eab43ac149ad
+                           .group:00000000 wm4.stm32f4xx_hal_gpio.h.21.22da6a14b6049d6ac156577be74df1d7
+                           .group:00000000 wm4.stm32f4xx_hal_gpio_ex.h.21.0bf68a49d3f777cd991627d0e08a2d5e
+                           .group:00000000 wm4.stm32f4xx_hal_gpio.h.254.d7e07832f748fe8bcb575db0b8373592
+                           .group:00000000 wm4.stm32f4xx_hal_exti.h.21.303b0d76f76068cfec77f0fbc85835c0
+                           .group:00000000 wm4.stm32f4xx_hal_dma.h.21.8e4b1421c914345c23be719e5e528779
+                           .group:00000000 wm4.stm32f4xx_hal_dma.h.720.ac2d7eef74792e4026acc4d2923c5da4
+                           .group:00000000 wm4.stm32f4xx_hal_cortex.h.20.a1e25f69ec9adea00da0353b137e869f
+                           .group:00000000 wm4.stm32f4xx_hal_flash.h.20.2f1e0d1b7010b3a81a7980aaf712e7e5
+                           .group:00000000 wm4.stm32f4xx_hal_flash_ex.h.20.0633581e18e8d959fa43f07a9d860979
+                           .group:00000000 wm4.stm32f4xx_hal_flash.h.361.23bc19b9eac79b0956d913651841ede8
+                           .group:00000000 wm4.stm32f4xx_hal_i2c.h.21.147e96a27b1f7b1f2f8ee22132703ee3
+                           .group:00000000 wm4.stm32f4xx_hal_i2c_ex.h.21.951ef5bfa13cf131d2015c338e82e461
+                           .group:00000000 wm4.stm32f4xx_hal_i2c.h.647.ade9c3447780b1cc0ece02f0ce83aedc
+                           .group:00000000 wm4.stm32f4xx_hal_pwr.h.20.1905a0783a9c83adefd7df0c4b501e40
+                           .group:00000000 wm4.stm32f4xx_hal_pwr_ex.h.20.1cd454a68f4573ea11695d020c0de0f5
+                           .group:00000000 wm4.stm32f4xx_hal_pwr.h.338.debc0a4a62ba54688e63ab53dd99c4ea
+                           .group:00000000 wm4.stm32f4xx_hal_uart.h.21.ba8e24dd05c77faac3f3d48472e636ba
+                           .group:00000000 wm4.stm32f4xx_ll_usb.h.21.371f1231e90cf558b19e6b21e6eb7150
+                           .group:00000000 wm4.stm32f4xx_hal_pcd.h.155.9516e0722978902161f66a3ea59779ae
+                           .group:00000000 wm4.stm32f4xx_hal.h.71.f077b42c1edb7a9e0b40aa6b2558aed9
+                           .group:00000000 wm4.newlib.h.7.94397327844a69ac8ce8d46310803afa
+                           .group:00000000 wm4.ieeefp.h.77.5ad60f72ea25fc152400b550ac118212
+                           .group:00000000 wm4.config.h.224.10ee1ad185d877c6e334e6581faab44d
+                           .group:00000000 wm4._ansi.h.31.de524f58584151836e90d8620a16f8e8
+                           .group:00000000 wm4.stdio.h.31.7c0e28c411445f3f9c5b11accf882760
+                           .group:00000000 wm4.stddef.h.158.eec8bf00b5213f43d095cb984c5f22e3
+                           .group:00000000 wm4.cdefs.h.49.70fc7af612f78ddcace70fdd90b5623b
+                           .group:00000000 wm4.stdarg.h.34.3a23a216c0c293b3d2ea2e89281481e6
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s 			page 6
+
+
+                           .group:00000000 wm4._types.h.20.dd0d04dca3800a0d2a6129b87f3adbb2
+                           .group:00000000 wm4.stddef.h.158.6f8e08a347b1cff664332fa350bfceb3
+                           .group:00000000 wm4._types.h.127.3bdfe3ff8ea2d0985b03d9cbe93480e3
+                           .group:00000000 wm4.reent.h.18.25503cdc8b7e55dd0d6ea7b3e5af7a03
+                           .group:00000000 wm4.lock.h.2.1461d1fff82dffe8bfddc23307f6484f
+                           .group:00000000 wm4.reent.h.78.7f0775353a33c852a1479c008f68cd03
+                           .group:00000000 wm4.stdio.h.67.0cf8a9c281ab0b348aef5c02e7e48825
+                           .group:00000000 wm4.stdio.h.2.4aa87247282eca6c8f36f9de33d8df1a
+                           .group:00000000 wm4.stdio.h.87.a1e20d2651f9bfb66e51bfbe849db00a
+                           .group:00000000 wm4.stdlib.h.13.4ed386f5c1a80d71e72172885d946ef2
+                           .group:00000000 wm4.alloca.h.8.dfc0c703c47ec3e69746825b17d9e66d
+                           .group:00000000 wm4.stdlib.h.56.f4862cfbf4363a1db01842d5bdf72c18
+                           .group:00000000 wm4.string.h.8.c4b8571ce60dff2817f43fec8b86aecd
+                           .group:00000000 wm4.usbd_conf.h.66.63c6925a6e41a2ad7eac72ce4b13d375
+                           .group:00000000 wm4.usbd_def.h.61.d2733aa1267b10885852241cab9db8e8
+                           .group:00000000 wm4.usbd_desc.h.22.da0e4504b8be02ad777217dfb9b392ff
+                           .group:00000000 wm4.usbd_cdc.h.44.0eceae774d5014a2e4272a1b88103b87
+                           .group:00000000 wm4.usbd_cdc_if.h.23.c0e476a27341b7a437ad4a5382810b9d
+
+UNDEFINED SYMBOLS
+USBD_Init
+Error_Handler
+USBD_RegisterClass
+USBD_CDC_RegisterInterface
+USBD_Start
+HS_Desc
+USBD_CDC
+USBD_Interface_fops_HS
