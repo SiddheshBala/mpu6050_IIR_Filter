@@ -1,0 +1,167 @@
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccbA9NJb.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 6
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"IIRFistOrderFilter.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/Src/IIRFistOrderFilter.c"
+  20              		.section	.text.IIRFilterInit,"ax",%progbits
+  21              		.align	1
+  22              		.global	IIRFilterInit
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	IIRFilterInit:
+  28              	.LFB0:
+   1:Core/Src/IIRFistOrderFilter.c **** #include<IIRFirstOrderFilter.h>
+   2:Core/Src/IIRFistOrderFilter.c **** 
+   3:Core/Src/IIRFistOrderFilter.c **** 
+   4:Core/Src/IIRFistOrderFilter.c **** void IIRFilterInit(IIRFilter * IIR, float alpha) {
+  29              		.loc 1 4 50
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 8
+  32              		@ frame_needed = 1, uses_anonymous_args = 0
+  33              		@ link register save eliminated.
+  34 0000 80B4     		push	{r7}
+  35              	.LCFI0:
+  36              		.cfi_def_cfa_offset 4
+  37              		.cfi_offset 7, -4
+  38 0002 83B0     		sub	sp, sp, #12
+  39              	.LCFI1:
+  40              		.cfi_def_cfa_offset 16
+  41 0004 00AF     		add	r7, sp, #0
+  42              	.LCFI2:
+  43              		.cfi_def_cfa_register 7
+  44 0006 7860     		str	r0, [r7, #4]
+  45 0008 87ED000A 		vstr.32	s0, [r7]
+   5:Core/Src/IIRFistOrderFilter.c ****     IIR->alpha = alpha;
+  46              		.loc 1 5 16
+  47 000c 7B68     		ldr	r3, [r7, #4]
+  48 000e 3A68     		ldr	r2, [r7]	@ float
+  49 0010 1A60     		str	r2, [r3]	@ float
+   6:Core/Src/IIRFistOrderFilter.c **** }
+  50              		.loc 1 6 1
+  51 0012 00BF     		nop
+  52 0014 0C37     		adds	r7, r7, #12
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccbA9NJb.s 			page 2
+
+
+  53              	.LCFI3:
+  54              		.cfi_def_cfa_offset 4
+  55 0016 BD46     		mov	sp, r7
+  56              	.LCFI4:
+  57              		.cfi_def_cfa_register 13
+  58              		@ sp needed
+  59 0018 5DF8047B 		ldr	r7, [sp], #4
+  60              	.LCFI5:
+  61              		.cfi_restore 7
+  62              		.cfi_def_cfa_offset 0
+  63 001c 7047     		bx	lr
+  64              		.cfi_endproc
+  65              	.LFE0:
+  67              		.section	.text.IIRFilterUpdate,"ax",%progbits
+  68              		.align	1
+  69              		.global	IIRFilterUpdate
+  70              		.syntax unified
+  71              		.thumb
+  72              		.thumb_func
+  74              	IIRFilterUpdate:
+  75              	.LFB1:
+   7:Core/Src/IIRFistOrderFilter.c **** 
+   8:Core/Src/IIRFistOrderFilter.c **** float IIRFilterUpdate(IIRFilter * iir, float input) {
+  76              		.loc 1 8 53
+  77              		.cfi_startproc
+  78              		@ args = 0, pretend = 0, frame = 8
+  79              		@ frame_needed = 1, uses_anonymous_args = 0
+  80              		@ link register save eliminated.
+  81 0000 80B4     		push	{r7}
+  82              	.LCFI6:
+  83              		.cfi_def_cfa_offset 4
+  84              		.cfi_offset 7, -4
+  85 0002 83B0     		sub	sp, sp, #12
+  86              	.LCFI7:
+  87              		.cfi_def_cfa_offset 16
+  88 0004 00AF     		add	r7, sp, #0
+  89              	.LCFI8:
+  90              		.cfi_def_cfa_register 7
+  91 0006 7860     		str	r0, [r7, #4]
+  92 0008 87ED000A 		vstr.32	s0, [r7]
+   9:Core/Src/IIRFistOrderFilter.c ****     iir->output = (1 - iir->alpha) * input + (iir->alpha * iir->output);
+  93              		.loc 1 9 27
+  94 000c 7B68     		ldr	r3, [r7, #4]
+  95 000e D3ED007A 		vldr.32	s15, [r3]
+  96              		.loc 1 9 22
+  97 0012 B7EE007A 		vmov.f32	s14, #1.0e+0
+  98 0016 37EE677A 		vsub.f32	s14, s14, s15
+  99              		.loc 1 9 36
+ 100 001a D7ED007A 		vldr.32	s15, [r7]
+ 101 001e 27EE277A 		vmul.f32	s14, s14, s15
+ 102              		.loc 1 9 50
+ 103 0022 7B68     		ldr	r3, [r7, #4]
+ 104 0024 D3ED006A 		vldr.32	s13, [r3]
+ 105              		.loc 1 9 63
+ 106 0028 7B68     		ldr	r3, [r7, #4]
+ 107 002a D3ED017A 		vldr.32	s15, [r3, #4]
+ 108              		.loc 1 9 58
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccbA9NJb.s 			page 3
+
+
+ 109 002e 66EEA77A 		vmul.f32	s15, s13, s15
+ 110              		.loc 1 9 44
+ 111 0032 77EE277A 		vadd.f32	s15, s14, s15
+ 112              		.loc 1 9 17
+ 113 0036 7B68     		ldr	r3, [r7, #4]
+ 114 0038 C3ED017A 		vstr.32	s15, [r3, #4]
+  10:Core/Src/IIRFistOrderFilter.c ****     return iir->output;
+ 115              		.loc 1 10 15
+ 116 003c 7B68     		ldr	r3, [r7, #4]
+ 117 003e 5B68     		ldr	r3, [r3, #4]	@ float
+ 118              		.loc 1 10 15 is_stmt 0 discriminator 1
+ 119 0040 07EE903A 		vmov	s15, r3
+  11:Core/Src/IIRFistOrderFilter.c **** }...
+ 120              		.loc 1 11 1 is_stmt 1
+ 121 0044 B0EE670A 		vmov.f32	s0, s15
+ 122 0048 0C37     		adds	r7, r7, #12
+ 123              	.LCFI9:
+ 124              		.cfi_def_cfa_offset 4
+ 125 004a BD46     		mov	sp, r7
+ 126              	.LCFI10:
+ 127              		.cfi_def_cfa_register 13
+ 128              		@ sp needed
+ 129 004c 5DF8047B 		ldr	r7, [sp], #4
+ 130              	.LCFI11:
+ 131              		.cfi_restore 7
+ 132              		.cfi_def_cfa_offset 0
+ 133 0050 7047     		bx	lr
+ 134              		.cfi_endproc
+ 135              	.LFE1:
+ 137              		.text
+ 138              	.Letext0:
+ 139              		.file 2 "Core/Inc/IIRFirstOrderFilter.h"
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccbA9NJb.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 IIRFistOrderFilter.c
+C:\Users\Siddhesh\AppData\Local\Temp\ccbA9NJb.s:21     .text.IIRFilterInit:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccbA9NJb.s:27     .text.IIRFilterInit:00000000 IIRFilterInit
+C:\Users\Siddhesh\AppData\Local\Temp\ccbA9NJb.s:68     .text.IIRFilterUpdate:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccbA9NJb.s:74     .text.IIRFilterUpdate:00000000 IIRFilterUpdate
+                           .group:00000000 wm4.0.f079ee757cd02b273648dd4f0fb0fb55
+
+NO UNDEFINED SYMBOLS

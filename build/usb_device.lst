@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s 			page 1
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccVrzeH3.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -20,10 +20,10 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s 			page 1
   17              	.Ltext0:
   18              		.cfi_sections	.debug_frame
   19              		.file 1 "USB_DEVICE/App/usb_device.c"
-  20              		.global	hUsbDeviceHS
-  21              		.section	.bss.hUsbDeviceHS,"aw",%nobits
+  20              		.global	hUsbDeviceFS
+  21              		.section	.bss.hUsbDeviceFS,"aw",%nobits
   22              		.align	2
-  25              	hUsbDeviceHS:
+  25              	hUsbDeviceFS:
   26 0000 00000000 		.space	732
   26      00000000 
   26      00000000 
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s 			page 1
   19:USB_DEVICE/App/usb_device.c **** /* USER CODE END Header */
   20:USB_DEVICE/App/usb_device.c **** 
   21:USB_DEVICE/App/usb_device.c **** /* Includes ------------------------------------------------------------------*/
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s 			page 2
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccVrzeH3.s 			page 2
 
 
   22:USB_DEVICE/App/usb_device.c **** 
@@ -83,7 +83,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s 			page 1
   41:USB_DEVICE/App/usb_device.c **** /* USER CODE END PFP */
   42:USB_DEVICE/App/usb_device.c **** 
   43:USB_DEVICE/App/usb_device.c **** /* USB Device Core handle declaration. */
-  44:USB_DEVICE/App/usb_device.c **** USBD_HandleTypeDef hUsbDeviceHS;
+  44:USB_DEVICE/App/usb_device.c **** USBD_HandleTypeDef hUsbDeviceFS;
   45:USB_DEVICE/App/usb_device.c **** 
   46:USB_DEVICE/App/usb_device.c **** /*
   47:USB_DEVICE/App/usb_device.c ****  * -- Insert your variables declaration here --
@@ -118,16 +118,16 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s 			page 1
   46              	.LCFI1:
   47              		.cfi_def_cfa_register 7
   66:USB_DEVICE/App/usb_device.c ****   /* USER CODE BEGIN USB_DEVICE_Init_PreTreatment */
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s 			page 3
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccVrzeH3.s 			page 3
 
 
   67:USB_DEVICE/App/usb_device.c **** 
   68:USB_DEVICE/App/usb_device.c ****   /* USER CODE END USB_DEVICE_Init_PreTreatment */
   69:USB_DEVICE/App/usb_device.c **** 
   70:USB_DEVICE/App/usb_device.c ****   /* Init Device Library, add supported class and start the library. */
-  71:USB_DEVICE/App/usb_device.c ****   if (USBD_Init(&hUsbDeviceHS, &HS_Desc, DEVICE_HS) != USBD_OK)
+  71:USB_DEVICE/App/usb_device.c ****   if (USBD_Init(&hUsbDeviceFS, &FS_Desc, DEVICE_FS) != USBD_OK)
   48              		.loc 1 71 7
-  49 0004 0122     		movs	r2, #1
+  49 0004 0022     		movs	r2, #0
   50 0006 1249     		ldr	r1, .L7
   51 0008 1248     		ldr	r0, .L7+4
   52 000a FFF7FEFF 		bl	USBD_Init
@@ -141,7 +141,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s 			page 1
   58 0014 FFF7FEFF 		bl	Error_Handler
   59              	.L2:
   74:USB_DEVICE/App/usb_device.c ****   }
-  75:USB_DEVICE/App/usb_device.c ****   if (USBD_RegisterClass(&hUsbDeviceHS, &USBD_CDC) != USBD_OK)
+  75:USB_DEVICE/App/usb_device.c ****   if (USBD_RegisterClass(&hUsbDeviceFS, &USBD_CDC) != USBD_OK)
   60              		.loc 1 75 7
   61 0018 0F49     		ldr	r1, .L7+8
   62 001a 0E48     		ldr	r0, .L7+4
@@ -156,7 +156,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s 			page 1
   69 0026 FFF7FEFF 		bl	Error_Handler
   70              	.L3:
   78:USB_DEVICE/App/usb_device.c ****   }
-  79:USB_DEVICE/App/usb_device.c ****   if (USBD_CDC_RegisterInterface(&hUsbDeviceHS, &USBD_Interface_fops_HS) != USBD_OK)
+  79:USB_DEVICE/App/usb_device.c ****   if (USBD_CDC_RegisterInterface(&hUsbDeviceFS, &USBD_Interface_fops_FS) != USBD_OK)
   71              		.loc 1 79 7
   72 002a 0C49     		ldr	r1, .L7+12
   73 002c 0948     		ldr	r0, .L7+4
@@ -171,14 +171,14 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s 			page 1
   80 0038 FFF7FEFF 		bl	Error_Handler
   81              	.L4:
   82:USB_DEVICE/App/usb_device.c ****   }
-  83:USB_DEVICE/App/usb_device.c ****   if (USBD_Start(&hUsbDeviceHS) != USBD_OK)
+  83:USB_DEVICE/App/usb_device.c ****   if (USBD_Start(&hUsbDeviceFS) != USBD_OK)
   82              		.loc 1 83 7
   83 003c 0548     		ldr	r0, .L7+4
   84 003e FFF7FEFF 		bl	USBD_Start
   85 0042 0346     		mov	r3, r0
   86              		.loc 1 83 6 discriminator 1
   87 0044 002B     		cmp	r3, #0
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s 			page 4
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccVrzeH3.s 			page 4
 
 
   88 0046 01D0     		beq	.L6
@@ -199,10 +199,10 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s 			page 1
   95              	.L8:
   96              		.align	2
   97              	.L7:
-  98 0050 00000000 		.word	HS_Desc
-  99 0054 00000000 		.word	hUsbDeviceHS
+  98 0050 00000000 		.word	FS_Desc
+  99 0054 00000000 		.word	hUsbDeviceFS
  100 0058 00000000 		.word	USBD_CDC
- 101 005c 00000000 		.word	USBD_Interface_fops_HS
+ 101 005c 00000000 		.word	USBD_Interface_fops_FS
  102              		.cfi_endproc
  103              	.LFE138:
  105              		.text
@@ -215,16 +215,16 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s 			page 1
  112              		.file 7 "USB_DEVICE/App/usbd_cdc_if.h"
  113              		.file 8 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h"
  114              		.file 9 "Core/Inc/main.h"
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s 			page 5
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccVrzeH3.s 			page 5
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usb_device.c
-C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s:25     .bss.hUsbDeviceHS:00000000 hUsbDeviceHS
-C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s:22     .bss.hUsbDeviceHS:00000000 $d
-C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s:28     .text.MX_USB_DEVICE_Init:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s:34     .text.MX_USB_DEVICE_Init:00000000 MX_USB_DEVICE_Init
-C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s:98     .text.MX_USB_DEVICE_Init:00000050 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccVrzeH3.s:25     .bss.hUsbDeviceFS:00000000 hUsbDeviceFS
+C:\Users\Siddhesh\AppData\Local\Temp\ccVrzeH3.s:22     .bss.hUsbDeviceFS:00000000 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccVrzeH3.s:28     .text.MX_USB_DEVICE_Init:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccVrzeH3.s:34     .text.MX_USB_DEVICE_Init:00000000 MX_USB_DEVICE_Init
+C:\Users\Siddhesh\AppData\Local\Temp\ccVrzeH3.s:98     .text.MX_USB_DEVICE_Init:00000050 $d
                            .group:00000000 wm4.0.f079ee757cd02b273648dd4f0fb0fb55
                            .group:00000000 wm4.stm32f4xx.h.38.d053a70ce905afacf9f39dda4c23396b
                            .group:00000000 wm4.stm32f429xx.h.34.42df97e3bab45b53f4e57c4e9dde2c7f
@@ -241,7 +241,7 @@ C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s:98     .text.MX_USB_DEVICE_Init:
                            .group:00000000 wm4.mpu_armv7.h.32.83326921a797fa9d6f70449916b4b839
                            .group:00000000 wm4.stm32f429xx.h.1024.d29798e268c99a104baf1d225206508d
                            .group:00000000 wm4.stm32f4xx.h.195.a4b8bf80f37cc96981498656ffe5f588
-                           .group:00000000 wm4.stm32f4xx_hal_conf.h.25.47f9051bf4ec028d46a7e2405ed07388
+                           .group:00000000 wm4.stm32f4xx_hal_conf.h.25.b2abea56d93c25e2068da4528f9625b4
                            .group:00000000 wm4.stm32_hal_legacy.h.22.a3518bfca5d6be2a3e3116a49624c24d
                            .group:00000000 wm4.stddef.h.39.0dc9006b34572d4d9cae4c8b422c4971
                            .group:00000000 wm4.stm32f4xx_hal_def.h.58.3cb484e92e5ccf2e55312a4714e27917
@@ -263,7 +263,6 @@ C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s:98     .text.MX_USB_DEVICE_Init:
                            .group:00000000 wm4.stm32f4xx_hal_pwr.h.20.1905a0783a9c83adefd7df0c4b501e40
                            .group:00000000 wm4.stm32f4xx_hal_pwr_ex.h.20.1cd454a68f4573ea11695d020c0de0f5
                            .group:00000000 wm4.stm32f4xx_hal_pwr.h.338.debc0a4a62ba54688e63ab53dd99c4ea
-                           .group:00000000 wm4.stm32f4xx_hal_uart.h.21.ba8e24dd05c77faac3f3d48472e636ba
                            .group:00000000 wm4.stm32f4xx_ll_usb.h.21.371f1231e90cf558b19e6b21e6eb7150
                            .group:00000000 wm4.stm32f4xx_hal_pcd.h.155.9516e0722978902161f66a3ea59779ae
                            .group:00000000 wm4.stm32f4xx_hal.h.71.f077b42c1edb7a9e0b40aa6b2558aed9
@@ -275,10 +274,10 @@ C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s:98     .text.MX_USB_DEVICE_Init:
                            .group:00000000 wm4.stddef.h.158.eec8bf00b5213f43d095cb984c5f22e3
                            .group:00000000 wm4.cdefs.h.49.70fc7af612f78ddcace70fdd90b5623b
                            .group:00000000 wm4.stdarg.h.34.3a23a216c0c293b3d2ea2e89281481e6
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\cc5ZhDok.s 			page 6
-
-
                            .group:00000000 wm4._types.h.20.dd0d04dca3800a0d2a6129b87f3adbb2
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccVrzeH3.s 			page 6
+
+
                            .group:00000000 wm4.stddef.h.158.6f8e08a347b1cff664332fa350bfceb3
                            .group:00000000 wm4._types.h.127.3bdfe3ff8ea2d0985b03d9cbe93480e3
                            .group:00000000 wm4.reent.h.18.25503cdc8b7e55dd0d6ea7b3e5af7a03
@@ -303,6 +302,6 @@ Error_Handler
 USBD_RegisterClass
 USBD_CDC_RegisterInterface
 USBD_Start
-HS_Desc
+FS_Desc
 USBD_CDC
-USBD_Interface_fops_HS
+USBD_Interface_fops_FS

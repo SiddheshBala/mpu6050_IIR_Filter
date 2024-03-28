@@ -18,11 +18,11 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "usb_device.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "mpu6050.h"
+#include "IIRFirstOrderFilter.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -45,8 +45,11 @@ I2C_HandleTypeDef hi2c1;
 
 UART_HandleTypeDef huart1;
 
-/* USER CODE BEGIN PV */
 
+/* USER CODE BEGIN PV */
+IIRFilter iir_x;
+IIRFilter iir_y;
+IIRFilter iir_z;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -69,8 +72,8 @@ void printDouble(double v, int decimalDigits)
   fractPart = (int)((v-(double)(int)v)*i);
   if(fractPart < 0) fractPart *= -1;
   char buf[30];
-  sprintf(buf, "%i.%i\r\n", intPart, fractPart);
-  SWO_PrintString(buf, 0);
+  int n = sprintf(buf, "%i.%i", intPart, fractPart);
+  HAL_UART_Transmit(&huart1, buf, n, 100);
 }
 /* USER CODE END 0 */
 
@@ -104,11 +107,10 @@ int main(void)
   MX_GPIO_Init();
   MX_I2C1_Init();
   MX_USART1_UART_Init();
-  // MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
-  mpu6050_init(&hi2c1);
+  mpu6050_init(&hi2c1, &iir_x, &iir_y, &iir_z);
 
-  double xAccel, yAccel, zAccel;
+  double xAccel, yAccel, zAccel, zAccel_IIR;
   MPU6050_t mpu;
   /* USER CODE END 2 */
 
@@ -120,24 +122,16 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    mpu6050_readData(&hi2c1, &mpu);
+    mpu6050_readData(&hi2c1, &mpu, &iir_x, &iir_y, &iir_z);
     HAL_Delay(100);
     xAccel = mpu.Ax;
     yAccel = mpu.Ay;
     zAccel = mpu.Az;
-    char buf[30];
-    // int n = sprintf(buf, "%0.7f\r\n", zAccel);
-
-    // HAL_UART_Transmit(&huart1, buf, n, 100);
-
-    char usbBuf[64];
-    int usbBufLen = snprintf(usbBuf, 64, "%0.2f\r\n", zAccel);
-
-    CDC_Transmit_HS((uint8_t *) usbBuf, usbBufLen);
-    // HAL_UART_Transmit(&huart1, usbBuf, usbBufLen, 100);
-
-    HAL_Delay(1000);
-    //SEGGER_RTT_WriteString(0, buf);
+    zAccel_IIR = mpu.Az_iir;
+    char buf[500];
+    int n = sprintf(buf, "%0.5f\r", (float)zAccel_IIR);
+    HAL_UART_Transmit(&huart1, buf, n, 100);
+    HAL_Delay(100);
   }
   /* USER CODE END 3 */
 }
@@ -154,7 +148,7 @@ void SystemClock_Config(void)
   /** Configure the main internal regulator output voltage
   */
   __HAL_RCC_PWR_CLK_ENABLE();
-  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
+  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE3);
 
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
@@ -164,18 +158,11 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
-  RCC_OscInitStruct.PLL.PLLM = 8;
-  RCC_OscInitStruct.PLL.PLLN = 180;
+  RCC_OscInitStruct.PLL.PLLM = 15;
+  RCC_OscInitStruct.PLL.PLLN = 144;
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
-  RCC_OscInitStruct.PLL.PLLQ = 4;
+  RCC_OscInitStruct.PLL.PLLQ = 5;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  /** Activate the Over-Drive mode
-  */
-  if (HAL_PWREx_EnableOverDrive() != HAL_OK)
   {
     Error_Handler();
   }
@@ -189,7 +176,7 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV4;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_5) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
   {
     Error_Handler();
   }
@@ -214,7 +201,7 @@ static void MX_I2C1_Init(void)
   hi2c1.Init.ClockSpeed = 100000;
   hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_2;
   hi2c1.Init.OwnAddress1 = 0;
-  hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_10BIT;
+  hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
   hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
   hi2c1.Init.OwnAddress2 = 0;
   hi2c1.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
@@ -288,10 +275,9 @@ static void MX_GPIO_Init(void)
 /* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
-  __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
-  __HAL_RCC_GPIOB_CLK_ENABLE();
   __HAL_RCC_GPIOG_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOG, GPIO_PIN_13|GPIO_PIN_14, GPIO_PIN_RESET);

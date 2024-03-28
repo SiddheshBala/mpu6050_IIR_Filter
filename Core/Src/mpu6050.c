@@ -1,5 +1,6 @@
 #include <mpu6050.h>
 #include <stdio.h>
+#include <IIRFirstOrderFilter.h>
 
 // extern I2C_HandleTypeDef hi2c1;
 HAL_StatusTypeDef checkMPU6050Connection(I2C_HandleTypeDef * hi2c1) {
@@ -7,7 +8,7 @@ HAL_StatusTypeDef checkMPU6050Connection(I2C_HandleTypeDef * hi2c1) {
     return ret;
 }
 
-void mpu6050_init(I2C_HandleTypeDef * hi2c1) {
+void mpu6050_init(I2C_HandleTypeDef * hi2c1, IIRFilter * iir_x, IIRFilter * iir_y, IIRFilter * iir_z) {
     HAL_StatusTypeDef mpuReady = checkMPU6050Connection(hi2c1);
     uint8_t check;
     uint8_t Data;
@@ -31,11 +32,15 @@ void mpu6050_init(I2C_HandleTypeDef * hi2c1) {
         HAL_StatusTypeDef accelSetupFlag = HAL_I2C_Mem_Write(hi2c1, devAddress, REG_ACC_CONFIG, 1, &tempData, 1, 100);
         
     }
+    IIRFilterInit(iir_x, 0.5);
+    IIRFilterInit(iir_y, 0.5);
+    IIRFilterInit(iir_z, 0.5);
+
 }
 
 
 
-void mpu6050_readData(I2C_HandleTypeDef * hi2c1, MPU6050_t * mpuVar) {
+void mpu6050_readData(I2C_HandleTypeDef * hi2c1, MPU6050_t * mpuVar, IIRFilter * iir_x, IIRFilter * iir_y, IIRFilter * iir_z) {
     uint8_t accData[6];
     HAL_StatusTypeDef isItReading = HAL_I2C_Mem_Read(hi2c1, devAddress, ACCEL_XOUT_H_REG, 1, accData, 6, 100);
 
@@ -46,6 +51,10 @@ void mpu6050_readData(I2C_HandleTypeDef * hi2c1, MPU6050_t * mpuVar) {
     mpuVar->Ax = mpuVar->raw_xaccel * ACC_FS_4G_SCALE;
     mpuVar->Ay = mpuVar->raw_yaccel * ACC_FS_4G_SCALE;
     mpuVar->Az = mpuVar->raw_zaccel * ACC_FS_4G_SCALE;
+
+    mpuVar->Ax_iir = IIRFilterUpdate(iir_x, mpuVar->Ax);
+    mpuVar->Ay_iir = IIRFilterUpdate(iir_y, mpuVar->Ay);
+    mpuVar->Az_iir = IIRFilterUpdate(iir_z, mpuVar->Az);
 
     uint8_t gyroData[6];
     isItReading = HAL_I2C_Mem_Read(hi2c1, devAddress, GYRO_XOUT_H_REG, 1, gyroData, 6, 100);

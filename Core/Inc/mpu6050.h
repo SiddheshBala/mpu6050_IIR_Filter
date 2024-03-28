@@ -7,6 +7,7 @@ extern "C" {
 /* Includes */
 #include "stm32f4xx_hal.h"
 #include <main.h>
+#include <IIRFirstOrderFilter.h>
 /* Definitions */
 #define devAddress 0xD0
 
@@ -36,6 +37,10 @@ typedef struct
     double Ay;
     double Az;
 
+    double Ax_iir;
+    double Ay_iir;
+    double Az_iir;
+
     int16_t raw_xgyro;
     int16_t raw_ygyro;
     int16_t raw_zgyro;
@@ -45,8 +50,8 @@ typedef struct
 } MPU6050_t;
 
 HAL_StatusTypeDef checkMPU6050Connection(I2C_HandleTypeDef * hi2c1);
-void mpu6050_init(I2C_HandleTypeDef * hi2c1);
-void mpu6050_readData(I2C_HandleTypeDef * hi2c1, MPU6050_t * mpuVar);
+void mpu6050_init(I2C_HandleTypeDef * hi2c1, IIRFilter * iir_x, IIRFilter * iir_y, IIRFilter * iir_z);
+void mpu6050_readData(I2C_HandleTypeDef * hi2c1, MPU6050_t * mpuVar, IIRFilter * iir_x, IIRFilter * iir_y, IIRFilter * iir_z);
 
 #ifdef __cplusplus
 }

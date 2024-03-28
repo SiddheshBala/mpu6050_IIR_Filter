@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s 			page 1
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s 			page 1
   28:Core/Src/stm32f4xx_it.c **** /* USER CODE BEGIN TD */
   29:Core/Src/stm32f4xx_it.c **** 
   30:Core/Src/stm32f4xx_it.c **** /* USER CODE END TD */
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s 			page 2
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s 			page 2
 
 
   31:Core/Src/stm32f4xx_it.c **** 
@@ -88,7 +88,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s 			page 1
   55:Core/Src/stm32f4xx_it.c **** /* USER CODE END 0 */
   56:Core/Src/stm32f4xx_it.c **** 
   57:Core/Src/stm32f4xx_it.c **** /* External variables --------------------------------------------------------*/
-  58:Core/Src/stm32f4xx_it.c **** extern PCD_HandleTypeDef hpcd_USB_OTG_HS;
+  58:Core/Src/stm32f4xx_it.c **** 
   59:Core/Src/stm32f4xx_it.c **** /* USER CODE BEGIN EV */
   60:Core/Src/stm32f4xx_it.c **** 
   61:Core/Src/stm32f4xx_it.c **** /* USER CODE END EV */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s 			page 1
   72:Core/Src/stm32f4xx_it.c **** 
   73:Core/Src/stm32f4xx_it.c ****   /* USER CODE END NonMaskableInt_IRQn 0 */
   74:Core/Src/stm32f4xx_it.c ****   /* USER CODE BEGIN NonMaskableInt_IRQn 1 */
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s 			page 3
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s 			page 3
 
 
   75:Core/Src/stm32f4xx_it.c ****    while (1)
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s 			page 1
   90:Core/Src/stm32f4xx_it.c ****   {
   91:Core/Src/stm32f4xx_it.c ****     /* USER CODE BEGIN W1_HardFault_IRQn 0 */
   92:Core/Src/stm32f4xx_it.c ****     /* USER CODE END W1_HardFault_IRQn 0 */
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s 			page 4
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s 			page 4
 
 
   93:Core/Src/stm32f4xx_it.c ****   }
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s 			page 1
  118 0000 80B4     		push	{r7}
  119              	.LCFI6:
  120              		.cfi_def_cfa_offset 4
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s 			page 5
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s 			page 5
 
 
  121              		.cfi_offset 7, -4
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s 			page 1
  158              	.LFE138:
  160              		.section	.text.SVC_Handler,"ax",%progbits
  161              		.align	1
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s 			page 6
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s 			page 6
 
 
  162              		.global	SVC_Handler
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s 			page 1
  200              		.thumb_func
  202              	DebugMon_Handler:
  203              	.LFB140:
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s 			page 7
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s 			page 7
 
 
  153:Core/Src/stm32f4xx_it.c **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s 			page 1
  241              		@ args = 0, pretend = 0, frame = 0
  242              		@ frame_needed = 1, uses_anonymous_args = 0
  243              		@ link register save eliminated.
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s 			page 8
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s 			page 8
 
 
  244 0000 80B4     		push	{r7}
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s 			page 1
  186:Core/Src/stm32f4xx_it.c **** 
  187:Core/Src/stm32f4xx_it.c ****   /* USER CODE END SysTick_IRQn 0 */
  188:Core/Src/stm32f4xx_it.c ****   HAL_IncTick();
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s 			page 9
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s 			page 9
 
 
  286              		.loc 1 188 3
@@ -492,99 +492,34 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s 			page 1
  290 000a 80BD     		pop	{r7, pc}
  291              		.cfi_endproc
  292              	.LFE142:
- 294              		.section	.text.OTG_HS_IRQHandler,"ax",%progbits
- 295              		.align	1
- 296              		.global	OTG_HS_IRQHandler
- 297              		.syntax unified
- 298              		.thumb
- 299              		.thumb_func
- 301              	OTG_HS_IRQHandler:
- 302              	.LFB143:
- 193:Core/Src/stm32f4xx_it.c **** 
- 194:Core/Src/stm32f4xx_it.c **** /******************************************************************************/
- 195:Core/Src/stm32f4xx_it.c **** /* STM32F4xx Peripheral Interrupt Handlers                                    */
- 196:Core/Src/stm32f4xx_it.c **** /* Add here the Interrupt Handlers for the used peripherals.                  */
- 197:Core/Src/stm32f4xx_it.c **** /* For the available peripheral interrupt handler names,                      */
- 198:Core/Src/stm32f4xx_it.c **** /* please refer to the startup file (startup_stm32f4xx.s).                    */
- 199:Core/Src/stm32f4xx_it.c **** /******************************************************************************/
- 200:Core/Src/stm32f4xx_it.c **** 
- 201:Core/Src/stm32f4xx_it.c **** /**
- 202:Core/Src/stm32f4xx_it.c ****   * @brief This function handles USB On The Go HS global interrupt.
- 203:Core/Src/stm32f4xx_it.c ****   */
- 204:Core/Src/stm32f4xx_it.c **** void OTG_HS_IRQHandler(void)
- 205:Core/Src/stm32f4xx_it.c **** {
- 303              		.loc 1 205 1
- 304              		.cfi_startproc
- 305              		@ args = 0, pretend = 0, frame = 0
- 306              		@ frame_needed = 1, uses_anonymous_args = 0
- 307 0000 80B5     		push	{r7, lr}
- 308              	.LCFI24:
- 309              		.cfi_def_cfa_offset 8
- 310              		.cfi_offset 7, -8
- 311              		.cfi_offset 14, -4
- 312 0002 00AF     		add	r7, sp, #0
- 313              	.LCFI25:
- 314              		.cfi_def_cfa_register 7
- 206:Core/Src/stm32f4xx_it.c ****   /* USER CODE BEGIN OTG_HS_IRQn 0 */
- 207:Core/Src/stm32f4xx_it.c **** 
- 208:Core/Src/stm32f4xx_it.c ****   /* USER CODE END OTG_HS_IRQn 0 */
- 209:Core/Src/stm32f4xx_it.c ****   HAL_PCD_IRQHandler(&hpcd_USB_OTG_HS);
- 315              		.loc 1 209 3
- 316 0004 0248     		ldr	r0, .L16
- 317 0006 FFF7FEFF 		bl	HAL_PCD_IRQHandler
- 210:Core/Src/stm32f4xx_it.c ****   /* USER CODE BEGIN OTG_HS_IRQn 1 */
- 211:Core/Src/stm32f4xx_it.c **** 
- 212:Core/Src/stm32f4xx_it.c ****   /* USER CODE END OTG_HS_IRQn 1 */
- 213:Core/Src/stm32f4xx_it.c **** }
- 318              		.loc 1 213 1
- 319 000a 00BF     		nop
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s 			page 10
-
-
- 320 000c 80BD     		pop	{r7, pc}
- 321              	.L17:
- 322 000e 00BF     		.align	2
- 323              	.L16:
- 324 0010 00000000 		.word	hpcd_USB_OTG_HS
- 325              		.cfi_endproc
- 326              	.LFE143:
- 328              		.text
- 329              	.Letext0:
- 330              		.file 2 "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.2 Rel1/arm-none-eabi/include/ma
- 331              		.file 3 "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.2 Rel1/arm-none-eabi/include/sy
- 332              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f429xx.h"
- 333              		.file 5 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
- 334              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h"
- 335              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h"
- 336              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s 			page 11
+ 294              		.text
+ 295              	.Letext0:
+ 296              		.file 2 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s 			page 10
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f4xx_it.c
-C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s:21     .text.NMI_Handler:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s:27     .text.NMI_Handler:00000000 NMI_Handler
-C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s:49     .text.HardFault_Handler:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s:55     .text.HardFault_Handler:00000000 HardFault_Handler
-C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s:77     .text.MemManage_Handler:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s:83     .text.MemManage_Handler:00000000 MemManage_Handler
-C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s:105    .text.BusFault_Handler:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s:111    .text.BusFault_Handler:00000000 BusFault_Handler
-C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s:133    .text.UsageFault_Handler:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s:139    .text.UsageFault_Handler:00000000 UsageFault_Handler
-C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s:161    .text.SVC_Handler:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s:167    .text.SVC_Handler:00000000 SVC_Handler
-C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s:196    .text.DebugMon_Handler:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s:202    .text.DebugMon_Handler:00000000 DebugMon_Handler
-C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s:231    .text.PendSV_Handler:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s:237    .text.PendSV_Handler:00000000 PendSV_Handler
-C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s:266    .text.SysTick_Handler:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s:272    .text.SysTick_Handler:00000000 SysTick_Handler
-C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s:295    .text.OTG_HS_IRQHandler:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s:301    .text.OTG_HS_IRQHandler:00000000 OTG_HS_IRQHandler
-C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s:324    .text.OTG_HS_IRQHandler:00000010 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s:21     .text.NMI_Handler:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s:27     .text.NMI_Handler:00000000 NMI_Handler
+C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s:49     .text.HardFault_Handler:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s:55     .text.HardFault_Handler:00000000 HardFault_Handler
+C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s:77     .text.MemManage_Handler:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s:83     .text.MemManage_Handler:00000000 MemManage_Handler
+C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s:105    .text.BusFault_Handler:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s:111    .text.BusFault_Handler:00000000 BusFault_Handler
+C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s:133    .text.UsageFault_Handler:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s:139    .text.UsageFault_Handler:00000000 UsageFault_Handler
+C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s:161    .text.SVC_Handler:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s:167    .text.SVC_Handler:00000000 SVC_Handler
+C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s:196    .text.DebugMon_Handler:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s:202    .text.DebugMon_Handler:00000000 DebugMon_Handler
+C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s:231    .text.PendSV_Handler:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s:237    .text.PendSV_Handler:00000000 PendSV_Handler
+C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s:266    .text.SysTick_Handler:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s:272    .text.SysTick_Handler:00000000 SysTick_Handler
                            .group:00000000 wm4.0.f079ee757cd02b273648dd4f0fb0fb55
-                           .group:00000000 wm4.stm32f4xx_hal_conf.h.25.47f9051bf4ec028d46a7e2405ed07388
+                           .group:00000000 wm4.stm32f4xx_hal_conf.h.25.fccf087c676d024bfb22e19ee306d195
                            .group:00000000 wm4.stm32f4xx.h.38.d053a70ce905afacf9f39dda4c23396b
                            .group:00000000 wm4.stm32f429xx.h.34.42df97e3bab45b53f4e57c4e9dde2c7f
                            .group:00000000 wm4._newlib_version.h.4.6d111ab2e95434b664b53815e5c8ccba
@@ -617,19 +552,15 @@ C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s:324    .text.OTG_HS_IRQHandler:0
                            .group:00000000 wm4.stm32f4xx_hal_flash.h.361.23bc19b9eac79b0956d913651841ede8
                            .group:00000000 wm4.stm32f4xx_hal_i2c.h.21.147e96a27b1f7b1f2f8ee22132703ee3
                            .group:00000000 wm4.stm32f4xx_hal_i2c_ex.h.21.951ef5bfa13cf131d2015c338e82e461
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccBQKGro.s 			page 12
-
-
                            .group:00000000 wm4.stm32f4xx_hal_i2c.h.647.ade9c3447780b1cc0ece02f0ce83aedc
                            .group:00000000 wm4.stm32f4xx_hal_pwr.h.20.1905a0783a9c83adefd7df0c4b501e40
                            .group:00000000 wm4.stm32f4xx_hal_pwr_ex.h.20.1cd454a68f4573ea11695d020c0de0f5
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccvKY3Ql.s 			page 11
+
+
                            .group:00000000 wm4.stm32f4xx_hal_pwr.h.338.debc0a4a62ba54688e63ab53dd99c4ea
                            .group:00000000 wm4.stm32f4xx_hal_uart.h.21.ba8e24dd05c77faac3f3d48472e636ba
-                           .group:00000000 wm4.stm32f4xx_ll_usb.h.21.371f1231e90cf558b19e6b21e6eb7150
-                           .group:00000000 wm4.stm32f4xx_hal_pcd.h.155.9516e0722978902161f66a3ea59779ae
                            .group:00000000 wm4.stm32f4xx_hal.h.71.f077b42c1edb7a9e0b40aa6b2558aed9
 
 UNDEFINED SYMBOLS
 HAL_IncTick
-HAL_PCD_IRQHandler
-hpcd_USB_OTG_HS

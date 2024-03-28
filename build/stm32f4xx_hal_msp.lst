@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 1
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 1
   28:Core/Src/stm32f4xx_hal_msp.c **** /* Private typedef -----------------------------------------------------------*/
   29:Core/Src/stm32f4xx_hal_msp.c **** /* USER CODE BEGIN TD */
   30:Core/Src/stm32f4xx_hal_msp.c **** 
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 2
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s 			page 2
 
 
   31:Core/Src/stm32f4xx_hal_msp.c **** /* USER CODE END TD */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 1
   69:Core/Src/stm32f4xx_hal_msp.c **** 
   70:Core/Src/stm32f4xx_hal_msp.c ****   __HAL_RCC_SYSCFG_CLK_ENABLE();
   45              		.loc 1 70 3
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 3
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s 			page 3
 
 
   46 0006 0023     		movs	r3, #0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 1
   92              		.cfi_endproc
   93              	.LFE134:
   95              		.section	.text.HAL_I2C_MspInit,"ax",%progbits
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 4
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s 			page 4
 
 
   96              		.align	1
@@ -229,7 +229,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 1
  131              		.loc 1 89 5
  132 001c 194A     		ldr	r2, .L7
  133 001e 9342     		cmp	r3, r2
- 134 0020 2CD1     		bne	.L6
+ 134 0020 2BD1     		bne	.L6
  135              	.LBB4:
   90:Core/Src/stm32f4xx_hal_msp.c ****   {
   91:Core/Src/stm32f4xx_hal_msp.c ****   /* USER CODE BEGIN I2C1_MspInit 0 */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 1
   94:Core/Src/stm32f4xx_hal_msp.c **** 
   95:Core/Src/stm32f4xx_hal_msp.c ****     __HAL_RCC_GPIOB_CLK_ENABLE();
  136              		.loc 1 95 5
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 5
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s 			page 5
 
 
  137 0022 0023     		movs	r3, #0
@@ -256,54 +256,54 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 1
  149              	.LBE4:
   96:Core/Src/stm32f4xx_hal_msp.c ****     /**I2C1 GPIO Configuration
   97:Core/Src/stm32f4xx_hal_msp.c ****     PB6     ------> I2C1_SCL
-  98:Core/Src/stm32f4xx_hal_msp.c ****     PB9     ------> I2C1_SDA
+  98:Core/Src/stm32f4xx_hal_msp.c ****     PB7     ------> I2C1_SDA
   99:Core/Src/stm32f4xx_hal_msp.c ****     */
- 100:Core/Src/stm32f4xx_hal_msp.c ****     GPIO_InitStruct.Pin = GPIO_PIN_6|GPIO_PIN_9;
+ 100:Core/Src/stm32f4xx_hal_msp.c ****     GPIO_InitStruct.Pin = GPIO_PIN_6|GPIO_PIN_7;
  150              		.loc 1 100 25
- 151 003e 4FF41073 		mov	r3, #576
- 152 0042 7B61     		str	r3, [r7, #20]
+ 151 003e C023     		movs	r3, #192
+ 152 0040 7B61     		str	r3, [r7, #20]
  101:Core/Src/stm32f4xx_hal_msp.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
  153              		.loc 1 101 26
- 154 0044 1223     		movs	r3, #18
- 155 0046 BB61     		str	r3, [r7, #24]
+ 154 0042 1223     		movs	r3, #18
+ 155 0044 BB61     		str	r3, [r7, #24]
  102:Core/Src/stm32f4xx_hal_msp.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
  156              		.loc 1 102 26
- 157 0048 0023     		movs	r3, #0
- 158 004a FB61     		str	r3, [r7, #28]
+ 157 0046 0023     		movs	r3, #0
+ 158 0048 FB61     		str	r3, [r7, #28]
  103:Core/Src/stm32f4xx_hal_msp.c ****     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
  159              		.loc 1 103 27
- 160 004c 0323     		movs	r3, #3
- 161 004e 3B62     		str	r3, [r7, #32]
+ 160 004a 0323     		movs	r3, #3
+ 161 004c 3B62     		str	r3, [r7, #32]
  104:Core/Src/stm32f4xx_hal_msp.c ****     GPIO_InitStruct.Alternate = GPIO_AF4_I2C1;
  162              		.loc 1 104 31
- 163 0050 0423     		movs	r3, #4
- 164 0052 7B62     		str	r3, [r7, #36]
+ 163 004e 0423     		movs	r3, #4
+ 164 0050 7B62     		str	r3, [r7, #36]
  105:Core/Src/stm32f4xx_hal_msp.c ****     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
  165              		.loc 1 105 5
- 166 0054 07F11403 		add	r3, r7, #20
- 167 0058 1946     		mov	r1, r3
- 168 005a 0C48     		ldr	r0, .L7+8
- 169 005c FFF7FEFF 		bl	HAL_GPIO_Init
+ 166 0052 07F11403 		add	r3, r7, #20
+ 167 0056 1946     		mov	r1, r3
+ 168 0058 0C48     		ldr	r0, .L7+8
+ 169 005a FFF7FEFF 		bl	HAL_GPIO_Init
  170              	.LBB5:
  106:Core/Src/stm32f4xx_hal_msp.c **** 
  107:Core/Src/stm32f4xx_hal_msp.c ****     /* Peripheral clock enable */
  108:Core/Src/stm32f4xx_hal_msp.c ****     __HAL_RCC_I2C1_CLK_ENABLE();
  171              		.loc 1 108 5
- 172 0060 0023     		movs	r3, #0
- 173 0062 FB60     		str	r3, [r7, #12]
- 174 0064 084B     		ldr	r3, .L7+4
- 175 0066 1B6C     		ldr	r3, [r3, #64]
- 176 0068 074A     		ldr	r2, .L7+4
- 177 006a 43F40013 		orr	r3, r3, #2097152
- 178 006e 1364     		str	r3, [r2, #64]
- 179 0070 054B     		ldr	r3, .L7+4
- 180 0072 1B6C     		ldr	r3, [r3, #64]
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 6
+ 172 005e 0023     		movs	r3, #0
+ 173 0060 FB60     		str	r3, [r7, #12]
+ 174 0062 094B     		ldr	r3, .L7+4
+ 175 0064 1B6C     		ldr	r3, [r3, #64]
+ 176 0066 084A     		ldr	r2, .L7+4
+ 177 0068 43F40013 		orr	r3, r3, #2097152
+ 178 006c 1364     		str	r3, [r2, #64]
+ 179 006e 064B     		ldr	r3, .L7+4
+ 180 0070 1B6C     		ldr	r3, [r3, #64]
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s 			page 6
 
 
- 181 0074 03F40013 		and	r3, r3, #2097152
- 182 0078 FB60     		str	r3, [r7, #12]
- 183 007a FB68     		ldr	r3, [r7, #12]
+ 181 0072 03F40013 		and	r3, r3, #2097152
+ 182 0076 FB60     		str	r3, [r7, #12]
+ 183 0078 FB68     		ldr	r3, [r7, #12]
  184              	.L6:
  185              	.LBE5:
  109:Core/Src/stm32f4xx_hal_msp.c ****   /* USER CODE BEGIN I2C1_MspInit 1 */
@@ -313,17 +313,17 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 1
  113:Core/Src/stm32f4xx_hal_msp.c **** 
  114:Core/Src/stm32f4xx_hal_msp.c **** }
  186              		.loc 1 114 1
- 187 007c 00BF     		nop
- 188 007e 2837     		adds	r7, r7, #40
+ 187 007a 00BF     		nop
+ 188 007c 2837     		adds	r7, r7, #40
  189              	.LCFI9:
  190              		.cfi_def_cfa_offset 8
- 191 0080 BD46     		mov	sp, r7
+ 191 007e BD46     		mov	sp, r7
  192              	.LCFI10:
  193              		.cfi_def_cfa_register 13
  194              		@ sp needed
- 195 0082 80BD     		pop	{r7, pc}
+ 195 0080 80BD     		pop	{r7, pc}
  196              	.L8:
- 197              		.align	2
+ 197 0082 00BF     		.align	2
  198              	.L7:
  199 0084 00540040 		.word	1073763328
  200 0088 00380240 		.word	1073887232
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 1
  222              		.cfi_offset 14, -4
  223 0002 82B0     		sub	sp, sp, #8
  224              	.LCFI12:
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 7
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s 			page 7
 
 
  225              		.cfi_def_cfa_offset 16
@@ -373,7 +373,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 1
  233              		.loc 1 124 5
  234 000c 0A4A     		ldr	r2, .L12
  235 000e 9342     		cmp	r3, r2
- 236 0010 0ED1     		bne	.L11
+ 236 0010 0DD1     		bne	.L11
  125:Core/Src/stm32f4xx_hal_msp.c ****   {
  126:Core/Src/stm32f4xx_hal_msp.c ****   /* USER CODE BEGIN I2C1_MspDeInit 0 */
  127:Core/Src/stm32f4xx_hal_msp.c **** 
@@ -389,7 +389,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 1
  131:Core/Src/stm32f4xx_hal_msp.c **** 
  132:Core/Src/stm32f4xx_hal_msp.c ****     /**I2C1 GPIO Configuration
  133:Core/Src/stm32f4xx_hal_msp.c ****     PB6     ------> I2C1_SCL
- 134:Core/Src/stm32f4xx_hal_msp.c ****     PB9     ------> I2C1_SDA
+ 134:Core/Src/stm32f4xx_hal_msp.c ****     PB7     ------> I2C1_SDA
  135:Core/Src/stm32f4xx_hal_msp.c ****     */
  136:Core/Src/stm32f4xx_hal_msp.c ****     HAL_GPIO_DeInit(GPIOB, GPIO_PIN_6);
  243              		.loc 1 136 5
@@ -397,11 +397,11 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 1
  245 0020 0748     		ldr	r0, .L12+8
  246 0022 FFF7FEFF 		bl	HAL_GPIO_DeInit
  137:Core/Src/stm32f4xx_hal_msp.c **** 
- 138:Core/Src/stm32f4xx_hal_msp.c ****     HAL_GPIO_DeInit(GPIOB, GPIO_PIN_9);
+ 138:Core/Src/stm32f4xx_hal_msp.c ****     HAL_GPIO_DeInit(GPIOB, GPIO_PIN_7);
  247              		.loc 1 138 5
- 248 0026 4FF40071 		mov	r1, #512
- 249 002a 0548     		ldr	r0, .L12+8
- 250 002c FFF7FEFF 		bl	HAL_GPIO_DeInit
+ 248 0026 8021     		movs	r1, #128
+ 249 0028 0548     		ldr	r0, .L12+8
+ 250 002a FFF7FEFF 		bl	HAL_GPIO_DeInit
  251              	.L11:
  139:Core/Src/stm32f4xx_hal_msp.c **** 
  140:Core/Src/stm32f4xx_hal_msp.c ****   /* USER CODE BEGIN I2C1_MspDeInit 1 */
@@ -411,20 +411,20 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 1
  144:Core/Src/stm32f4xx_hal_msp.c **** 
  145:Core/Src/stm32f4xx_hal_msp.c **** }
  252              		.loc 1 145 1
- 253 0030 00BF     		nop
- 254 0032 0837     		adds	r7, r7, #8
+ 253 002e 00BF     		nop
+ 254 0030 0837     		adds	r7, r7, #8
  255              	.LCFI14:
  256              		.cfi_def_cfa_offset 8
- 257 0034 BD46     		mov	sp, r7
+ 257 0032 BD46     		mov	sp, r7
  258              	.LCFI15:
  259              		.cfi_def_cfa_register 13
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 8
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s 			page 8
 
 
  260              		@ sp needed
- 261 0036 80BD     		pop	{r7, pc}
+ 261 0034 80BD     		pop	{r7, pc}
  262              	.L13:
- 263              		.align	2
+ 263 0036 00BF     		.align	2
  264              	.L12:
  265 0038 00540040 		.word	1073763328
  266 003c 00380240 		.word	1073887232
@@ -478,12 +478,12 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 1
  305 0018 7B68     		ldr	r3, [r7, #4]
  306 001a 1B68     		ldr	r3, [r3]
  307              		.loc 1 156 5
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 9
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s 			page 9
 
 
- 308 001c 284A     		ldr	r2, .L17
+ 308 001c 194A     		ldr	r2, .L17
  309 001e 9342     		cmp	r3, r2
- 310 0020 4AD1     		bne	.L16
+ 310 0020 2CD1     		bne	.L16
  311              	.LBB6:
  157:Core/Src/stm32f4xx_hal_msp.c ****   {
  158:Core/Src/stm32f4xx_hal_msp.c ****   /* USER CODE BEGIN USART1_MspInit 0 */
@@ -494,12 +494,12 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 1
  312              		.loc 1 162 5
  313 0022 0023     		movs	r3, #0
  314 0024 3B61     		str	r3, [r7, #16]
- 315 0026 274B     		ldr	r3, .L17+4
+ 315 0026 184B     		ldr	r3, .L17+4
  316 0028 5B6C     		ldr	r3, [r3, #68]
- 317 002a 264A     		ldr	r2, .L17+4
+ 317 002a 174A     		ldr	r2, .L17+4
  318 002c 43F01003 		orr	r3, r3, #16
  319 0030 5364     		str	r3, [r2, #68]
- 320 0032 244B     		ldr	r3, .L17+4
+ 320 0032 154B     		ldr	r3, .L17+4
  321 0034 5B6C     		ldr	r3, [r3, #68]
  322 0036 03F01003 		and	r3, r3, #16
  323 003a 3B61     		str	r3, [r7, #16]
@@ -511,257 +511,203 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 1
  327              		.loc 1 164 5
  328 003e 0023     		movs	r3, #0
  329 0040 FB60     		str	r3, [r7, #12]
- 330 0042 204B     		ldr	r3, .L17+4
+ 330 0042 114B     		ldr	r3, .L17+4
  331 0044 1B6B     		ldr	r3, [r3, #48]
- 332 0046 1F4A     		ldr	r2, .L17+4
+ 332 0046 104A     		ldr	r2, .L17+4
  333 0048 43F00103 		orr	r3, r3, #1
  334 004c 1363     		str	r3, [r2, #48]
- 335 004e 1D4B     		ldr	r3, .L17+4
+ 335 004e 0E4B     		ldr	r3, .L17+4
  336 0050 1B6B     		ldr	r3, [r3, #48]
  337 0052 03F00103 		and	r3, r3, #1
  338 0056 FB60     		str	r3, [r7, #12]
  339 0058 FB68     		ldr	r3, [r7, #12]
  340              	.LBE7:
- 341              	.LBB8:
- 165:Core/Src/stm32f4xx_hal_msp.c ****     __HAL_RCC_GPIOB_CLK_ENABLE();
- 342              		.loc 1 165 5
- 343 005a 0023     		movs	r3, #0
- 344 005c BB60     		str	r3, [r7, #8]
- 345 005e 194B     		ldr	r3, .L17+4
- 346 0060 1B6B     		ldr	r3, [r3, #48]
- 347 0062 184A     		ldr	r2, .L17+4
- 348 0064 43F00203 		orr	r3, r3, #2
- 349 0068 1363     		str	r3, [r2, #48]
- 350 006a 164B     		ldr	r3, .L17+4
- 351 006c 1B6B     		ldr	r3, [r3, #48]
- 352 006e 03F00203 		and	r3, r3, #2
- 353 0072 BB60     		str	r3, [r7, #8]
- 354 0074 BB68     		ldr	r3, [r7, #8]
- 355              	.LBE8:
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 10
+ 165:Core/Src/stm32f4xx_hal_msp.c ****     /**USART1 GPIO Configuration
+ 166:Core/Src/stm32f4xx_hal_msp.c ****     PA9     ------> USART1_TX
+ 167:Core/Src/stm32f4xx_hal_msp.c ****     PA10     ------> USART1_RX
+ 168:Core/Src/stm32f4xx_hal_msp.c ****     */
+ 169:Core/Src/stm32f4xx_hal_msp.c ****     GPIO_InitStruct.Pin = GPIO_PIN_9|GPIO_PIN_10;
+ 341              		.loc 1 169 25
+ 342 005a 4FF4C063 		mov	r3, #1536
+ 343 005e 7B61     		str	r3, [r7, #20]
+ 170:Core/Src/stm32f4xx_hal_msp.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+ 344              		.loc 1 170 26
+ 345 0060 0223     		movs	r3, #2
+ 346 0062 BB61     		str	r3, [r7, #24]
+ 171:Core/Src/stm32f4xx_hal_msp.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
+ 347              		.loc 1 171 26
+ 348 0064 0023     		movs	r3, #0
+ 349 0066 FB61     		str	r3, [r7, #28]
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s 			page 10
 
 
- 166:Core/Src/stm32f4xx_hal_msp.c ****     /**USART1 GPIO Configuration
- 167:Core/Src/stm32f4xx_hal_msp.c ****     PA9     ------> USART1_TX
- 168:Core/Src/stm32f4xx_hal_msp.c ****     PB7     ------> USART1_RX
- 169:Core/Src/stm32f4xx_hal_msp.c ****     */
- 170:Core/Src/stm32f4xx_hal_msp.c ****     GPIO_InitStruct.Pin = GPIO_PIN_9;
- 356              		.loc 1 170 25
- 357 0076 4FF40073 		mov	r3, #512
- 358 007a 7B61     		str	r3, [r7, #20]
- 171:Core/Src/stm32f4xx_hal_msp.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
- 359              		.loc 1 171 26
- 360 007c 0223     		movs	r3, #2
- 361 007e BB61     		str	r3, [r7, #24]
- 172:Core/Src/stm32f4xx_hal_msp.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
- 362              		.loc 1 172 26
- 363 0080 0023     		movs	r3, #0
- 364 0082 FB61     		str	r3, [r7, #28]
- 173:Core/Src/stm32f4xx_hal_msp.c ****     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
- 365              		.loc 1 173 27
- 366 0084 0323     		movs	r3, #3
- 367 0086 3B62     		str	r3, [r7, #32]
- 174:Core/Src/stm32f4xx_hal_msp.c ****     GPIO_InitStruct.Alternate = GPIO_AF7_USART1;
- 368              		.loc 1 174 31
- 369 0088 0723     		movs	r3, #7
- 370 008a 7B62     		str	r3, [r7, #36]
- 175:Core/Src/stm32f4xx_hal_msp.c ****     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
- 371              		.loc 1 175 5
- 372 008c 07F11403 		add	r3, r7, #20
- 373 0090 1946     		mov	r1, r3
- 374 0092 0D48     		ldr	r0, .L17+8
- 375 0094 FFF7FEFF 		bl	HAL_GPIO_Init
- 176:Core/Src/stm32f4xx_hal_msp.c **** 
- 177:Core/Src/stm32f4xx_hal_msp.c ****     GPIO_InitStruct.Pin = GPIO_PIN_7;
- 376              		.loc 1 177 25
- 377 0098 8023     		movs	r3, #128
- 378 009a 7B61     		str	r3, [r7, #20]
- 178:Core/Src/stm32f4xx_hal_msp.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
- 379              		.loc 1 178 26
- 380 009c 0223     		movs	r3, #2
- 381 009e BB61     		str	r3, [r7, #24]
- 179:Core/Src/stm32f4xx_hal_msp.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
- 382              		.loc 1 179 26
- 383 00a0 0023     		movs	r3, #0
- 384 00a2 FB61     		str	r3, [r7, #28]
- 180:Core/Src/stm32f4xx_hal_msp.c ****     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
- 385              		.loc 1 180 27
- 386 00a4 0323     		movs	r3, #3
- 387 00a6 3B62     		str	r3, [r7, #32]
- 181:Core/Src/stm32f4xx_hal_msp.c ****     GPIO_InitStruct.Alternate = GPIO_AF7_USART1;
- 388              		.loc 1 181 31
- 389 00a8 0723     		movs	r3, #7
- 390 00aa 7B62     		str	r3, [r7, #36]
- 182:Core/Src/stm32f4xx_hal_msp.c ****     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
- 391              		.loc 1 182 5
- 392 00ac 07F11403 		add	r3, r7, #20
- 393 00b0 1946     		mov	r1, r3
- 394 00b2 0648     		ldr	r0, .L17+12
- 395 00b4 FFF7FEFF 		bl	HAL_GPIO_Init
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 11
+ 172:Core/Src/stm32f4xx_hal_msp.c ****     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+ 350              		.loc 1 172 27
+ 351 0068 0323     		movs	r3, #3
+ 352 006a 3B62     		str	r3, [r7, #32]
+ 173:Core/Src/stm32f4xx_hal_msp.c ****     GPIO_InitStruct.Alternate = GPIO_AF7_USART1;
+ 353              		.loc 1 173 31
+ 354 006c 0723     		movs	r3, #7
+ 355 006e 7B62     		str	r3, [r7, #36]
+ 174:Core/Src/stm32f4xx_hal_msp.c ****     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+ 356              		.loc 1 174 5
+ 357 0070 07F11403 		add	r3, r7, #20
+ 358 0074 1946     		mov	r1, r3
+ 359 0076 0548     		ldr	r0, .L17+8
+ 360 0078 FFF7FEFF 		bl	HAL_GPIO_Init
+ 361              	.L16:
+ 175:Core/Src/stm32f4xx_hal_msp.c **** 
+ 176:Core/Src/stm32f4xx_hal_msp.c ****   /* USER CODE BEGIN USART1_MspInit 1 */
+ 177:Core/Src/stm32f4xx_hal_msp.c **** 
+ 178:Core/Src/stm32f4xx_hal_msp.c ****   /* USER CODE END USART1_MspInit 1 */
+ 179:Core/Src/stm32f4xx_hal_msp.c ****   }
+ 180:Core/Src/stm32f4xx_hal_msp.c **** 
+ 181:Core/Src/stm32f4xx_hal_msp.c **** }
+ 362              		.loc 1 181 1
+ 363 007c 00BF     		nop
+ 364 007e 2837     		adds	r7, r7, #40
+ 365              	.LCFI19:
+ 366              		.cfi_def_cfa_offset 8
+ 367 0080 BD46     		mov	sp, r7
+ 368              	.LCFI20:
+ 369              		.cfi_def_cfa_register 13
+ 370              		@ sp needed
+ 371 0082 80BD     		pop	{r7, pc}
+ 372              	.L18:
+ 373              		.align	2
+ 374              	.L17:
+ 375 0084 00100140 		.word	1073811456
+ 376 0088 00380240 		.word	1073887232
+ 377 008c 00000240 		.word	1073872896
+ 378              		.cfi_endproc
+ 379              	.LFE137:
+ 381              		.section	.text.HAL_UART_MspDeInit,"ax",%progbits
+ 382              		.align	1
+ 383              		.global	HAL_UART_MspDeInit
+ 384              		.syntax unified
+ 385              		.thumb
+ 386              		.thumb_func
+ 388              	HAL_UART_MspDeInit:
+ 389              	.LFB138:
+ 182:Core/Src/stm32f4xx_hal_msp.c **** 
+ 183:Core/Src/stm32f4xx_hal_msp.c **** /**
+ 184:Core/Src/stm32f4xx_hal_msp.c **** * @brief UART MSP De-Initialization
+ 185:Core/Src/stm32f4xx_hal_msp.c **** * This function freeze the hardware resources used in this example
+ 186:Core/Src/stm32f4xx_hal_msp.c **** * @param huart: UART handle pointer
+ 187:Core/Src/stm32f4xx_hal_msp.c **** * @retval None
+ 188:Core/Src/stm32f4xx_hal_msp.c **** */
+ 189:Core/Src/stm32f4xx_hal_msp.c **** void HAL_UART_MspDeInit(UART_HandleTypeDef* huart)
+ 190:Core/Src/stm32f4xx_hal_msp.c **** {
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s 			page 11
 
 
- 396              	.L16:
- 183:Core/Src/stm32f4xx_hal_msp.c **** 
- 184:Core/Src/stm32f4xx_hal_msp.c ****   /* USER CODE BEGIN USART1_MspInit 1 */
- 185:Core/Src/stm32f4xx_hal_msp.c **** 
- 186:Core/Src/stm32f4xx_hal_msp.c ****   /* USER CODE END USART1_MspInit 1 */
- 187:Core/Src/stm32f4xx_hal_msp.c ****   }
- 188:Core/Src/stm32f4xx_hal_msp.c **** 
- 189:Core/Src/stm32f4xx_hal_msp.c **** }
- 397              		.loc 1 189 1
- 398 00b8 00BF     		nop
- 399 00ba 2837     		adds	r7, r7, #40
- 400              	.LCFI19:
- 401              		.cfi_def_cfa_offset 8
- 402 00bc BD46     		mov	sp, r7
- 403              	.LCFI20:
- 404              		.cfi_def_cfa_register 13
- 405              		@ sp needed
- 406 00be 80BD     		pop	{r7, pc}
- 407              	.L18:
- 408              		.align	2
- 409              	.L17:
- 410 00c0 00100140 		.word	1073811456
- 411 00c4 00380240 		.word	1073887232
- 412 00c8 00000240 		.word	1073872896
- 413 00cc 00040240 		.word	1073873920
- 414              		.cfi_endproc
- 415              	.LFE137:
- 417              		.section	.text.HAL_UART_MspDeInit,"ax",%progbits
- 418              		.align	1
- 419              		.global	HAL_UART_MspDeInit
- 420              		.syntax unified
- 421              		.thumb
- 422              		.thumb_func
- 424              	HAL_UART_MspDeInit:
- 425              	.LFB138:
- 190:Core/Src/stm32f4xx_hal_msp.c **** 
- 191:Core/Src/stm32f4xx_hal_msp.c **** /**
- 192:Core/Src/stm32f4xx_hal_msp.c **** * @brief UART MSP De-Initialization
- 193:Core/Src/stm32f4xx_hal_msp.c **** * This function freeze the hardware resources used in this example
- 194:Core/Src/stm32f4xx_hal_msp.c **** * @param huart: UART handle pointer
- 195:Core/Src/stm32f4xx_hal_msp.c **** * @retval None
- 196:Core/Src/stm32f4xx_hal_msp.c **** */
- 197:Core/Src/stm32f4xx_hal_msp.c **** void HAL_UART_MspDeInit(UART_HandleTypeDef* huart)
- 198:Core/Src/stm32f4xx_hal_msp.c **** {
- 426              		.loc 1 198 1
- 427              		.cfi_startproc
- 428              		@ args = 0, pretend = 0, frame = 8
- 429              		@ frame_needed = 1, uses_anonymous_args = 0
- 430 0000 80B5     		push	{r7, lr}
- 431              	.LCFI21:
- 432              		.cfi_def_cfa_offset 8
- 433              		.cfi_offset 7, -8
- 434              		.cfi_offset 14, -4
- 435 0002 82B0     		sub	sp, sp, #8
- 436              	.LCFI22:
- 437              		.cfi_def_cfa_offset 16
- 438 0004 00AF     		add	r7, sp, #0
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 12
-
-
- 439              	.LCFI23:
- 440              		.cfi_def_cfa_register 7
- 441 0006 7860     		str	r0, [r7, #4]
- 199:Core/Src/stm32f4xx_hal_msp.c ****   if(huart->Instance==USART1)
- 442              		.loc 1 199 11
- 443 0008 7B68     		ldr	r3, [r7, #4]
- 444 000a 1B68     		ldr	r3, [r3]
- 445              		.loc 1 199 5
- 446 000c 0A4A     		ldr	r2, .L22
- 447 000e 9342     		cmp	r3, r2
- 448 0010 0ED1     		bne	.L21
- 200:Core/Src/stm32f4xx_hal_msp.c ****   {
- 201:Core/Src/stm32f4xx_hal_msp.c ****   /* USER CODE BEGIN USART1_MspDeInit 0 */
- 202:Core/Src/stm32f4xx_hal_msp.c **** 
- 203:Core/Src/stm32f4xx_hal_msp.c ****   /* USER CODE END USART1_MspDeInit 0 */
- 204:Core/Src/stm32f4xx_hal_msp.c ****     /* Peripheral clock disable */
- 205:Core/Src/stm32f4xx_hal_msp.c ****     __HAL_RCC_USART1_CLK_DISABLE();
- 449              		.loc 1 205 5
- 450 0012 0A4B     		ldr	r3, .L22+4
- 451 0014 5B6C     		ldr	r3, [r3, #68]
- 452 0016 094A     		ldr	r2, .L22+4
- 453 0018 23F01003 		bic	r3, r3, #16
- 454 001c 5364     		str	r3, [r2, #68]
+ 390              		.loc 1 190 1
+ 391              		.cfi_startproc
+ 392              		@ args = 0, pretend = 0, frame = 8
+ 393              		@ frame_needed = 1, uses_anonymous_args = 0
+ 394 0000 80B5     		push	{r7, lr}
+ 395              	.LCFI21:
+ 396              		.cfi_def_cfa_offset 8
+ 397              		.cfi_offset 7, -8
+ 398              		.cfi_offset 14, -4
+ 399 0002 82B0     		sub	sp, sp, #8
+ 400              	.LCFI22:
+ 401              		.cfi_def_cfa_offset 16
+ 402 0004 00AF     		add	r7, sp, #0
+ 403              	.LCFI23:
+ 404              		.cfi_def_cfa_register 7
+ 405 0006 7860     		str	r0, [r7, #4]
+ 191:Core/Src/stm32f4xx_hal_msp.c ****   if(huart->Instance==USART1)
+ 406              		.loc 1 191 11
+ 407 0008 7B68     		ldr	r3, [r7, #4]
+ 408 000a 1B68     		ldr	r3, [r3]
+ 409              		.loc 1 191 5
+ 410 000c 084A     		ldr	r2, .L22
+ 411 000e 9342     		cmp	r3, r2
+ 412 0010 0AD1     		bne	.L21
+ 192:Core/Src/stm32f4xx_hal_msp.c ****   {
+ 193:Core/Src/stm32f4xx_hal_msp.c ****   /* USER CODE BEGIN USART1_MspDeInit 0 */
+ 194:Core/Src/stm32f4xx_hal_msp.c **** 
+ 195:Core/Src/stm32f4xx_hal_msp.c ****   /* USER CODE END USART1_MspDeInit 0 */
+ 196:Core/Src/stm32f4xx_hal_msp.c ****     /* Peripheral clock disable */
+ 197:Core/Src/stm32f4xx_hal_msp.c ****     __HAL_RCC_USART1_CLK_DISABLE();
+ 413              		.loc 1 197 5
+ 414 0012 084B     		ldr	r3, .L22+4
+ 415 0014 5B6C     		ldr	r3, [r3, #68]
+ 416 0016 074A     		ldr	r2, .L22+4
+ 417 0018 23F01003 		bic	r3, r3, #16
+ 418 001c 5364     		str	r3, [r2, #68]
+ 198:Core/Src/stm32f4xx_hal_msp.c **** 
+ 199:Core/Src/stm32f4xx_hal_msp.c ****     /**USART1 GPIO Configuration
+ 200:Core/Src/stm32f4xx_hal_msp.c ****     PA9     ------> USART1_TX
+ 201:Core/Src/stm32f4xx_hal_msp.c ****     PA10     ------> USART1_RX
+ 202:Core/Src/stm32f4xx_hal_msp.c ****     */
+ 203:Core/Src/stm32f4xx_hal_msp.c ****     HAL_GPIO_DeInit(GPIOA, GPIO_PIN_9|GPIO_PIN_10);
+ 419              		.loc 1 203 5
+ 420 001e 4FF4C061 		mov	r1, #1536
+ 421 0022 0548     		ldr	r0, .L22+8
+ 422 0024 FFF7FEFF 		bl	HAL_GPIO_DeInit
+ 423              	.L21:
+ 204:Core/Src/stm32f4xx_hal_msp.c **** 
+ 205:Core/Src/stm32f4xx_hal_msp.c ****   /* USER CODE BEGIN USART1_MspDeInit 1 */
  206:Core/Src/stm32f4xx_hal_msp.c **** 
- 207:Core/Src/stm32f4xx_hal_msp.c ****     /**USART1 GPIO Configuration
- 208:Core/Src/stm32f4xx_hal_msp.c ****     PA9     ------> USART1_TX
- 209:Core/Src/stm32f4xx_hal_msp.c ****     PB7     ------> USART1_RX
- 210:Core/Src/stm32f4xx_hal_msp.c ****     */
- 211:Core/Src/stm32f4xx_hal_msp.c ****     HAL_GPIO_DeInit(GPIOA, GPIO_PIN_9);
- 455              		.loc 1 211 5
- 456 001e 4FF40071 		mov	r1, #512
- 457 0022 0748     		ldr	r0, .L22+8
- 458 0024 FFF7FEFF 		bl	HAL_GPIO_DeInit
- 212:Core/Src/stm32f4xx_hal_msp.c **** 
- 213:Core/Src/stm32f4xx_hal_msp.c ****     HAL_GPIO_DeInit(GPIOB, GPIO_PIN_7);
- 459              		.loc 1 213 5
- 460 0028 8021     		movs	r1, #128
- 461 002a 0648     		ldr	r0, .L22+12
- 462 002c FFF7FEFF 		bl	HAL_GPIO_DeInit
- 463              	.L21:
- 214:Core/Src/stm32f4xx_hal_msp.c **** 
- 215:Core/Src/stm32f4xx_hal_msp.c ****   /* USER CODE BEGIN USART1_MspDeInit 1 */
- 216:Core/Src/stm32f4xx_hal_msp.c **** 
- 217:Core/Src/stm32f4xx_hal_msp.c ****   /* USER CODE END USART1_MspDeInit 1 */
- 218:Core/Src/stm32f4xx_hal_msp.c ****   }
- 219:Core/Src/stm32f4xx_hal_msp.c **** 
- 220:Core/Src/stm32f4xx_hal_msp.c **** }
- 464              		.loc 1 220 1
- 465 0030 00BF     		nop
- 466 0032 0837     		adds	r7, r7, #8
- 467              	.LCFI24:
- 468              		.cfi_def_cfa_offset 8
- 469 0034 BD46     		mov	sp, r7
- 470              	.LCFI25:
- 471              		.cfi_def_cfa_register 13
- 472              		@ sp needed
- 473 0036 80BD     		pop	{r7, pc}
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 13
+ 207:Core/Src/stm32f4xx_hal_msp.c ****   /* USER CODE END USART1_MspDeInit 1 */
+ 208:Core/Src/stm32f4xx_hal_msp.c ****   }
+ 209:Core/Src/stm32f4xx_hal_msp.c **** 
+ 210:Core/Src/stm32f4xx_hal_msp.c **** }
+ 424              		.loc 1 210 1
+ 425 0028 00BF     		nop
+ 426 002a 0837     		adds	r7, r7, #8
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s 			page 12
 
 
- 474              	.L23:
- 475              		.align	2
- 476              	.L22:
- 477 0038 00100140 		.word	1073811456
- 478 003c 00380240 		.word	1073887232
- 479 0040 00000240 		.word	1073872896
- 480 0044 00040240 		.word	1073873920
- 481              		.cfi_endproc
- 482              	.LFE138:
- 484              		.text
- 485              	.Letext0:
- 486              		.file 2 "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.2 Rel1/arm-none-eabi/include/ma
- 487              		.file 3 "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.2 Rel1/arm-none-eabi/include/sy
- 488              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f429xx.h"
- 489              		.file 5 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
- 490              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
- 491              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
- 492              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h"
- 493              		.file 9 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h"
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 14
+ 427              	.LCFI24:
+ 428              		.cfi_def_cfa_offset 8
+ 429 002c BD46     		mov	sp, r7
+ 430              	.LCFI25:
+ 431              		.cfi_def_cfa_register 13
+ 432              		@ sp needed
+ 433 002e 80BD     		pop	{r7, pc}
+ 434              	.L23:
+ 435              		.align	2
+ 436              	.L22:
+ 437 0030 00100140 		.word	1073811456
+ 438 0034 00380240 		.word	1073887232
+ 439 0038 00000240 		.word	1073872896
+ 440              		.cfi_endproc
+ 441              	.LFE138:
+ 443              		.text
+ 444              	.Letext0:
+ 445              		.file 2 "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.2 Rel1/arm-none-eabi/include/ma
+ 446              		.file 3 "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.2 Rel1/arm-none-eabi/include/sy
+ 447              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f429xx.h"
+ 448              		.file 5 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
+ 449              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
+ 450              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
+ 451              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h"
+ 452              		.file 9 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h"
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s 			page 13
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f4xx_hal_msp.c
-C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s:21     .text.HAL_MspInit:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s:27     .text.HAL_MspInit:00000000 HAL_MspInit
-C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s:91     .text.HAL_MspInit:0000004c $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s:96     .text.HAL_I2C_MspInit:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s:102    .text.HAL_I2C_MspInit:00000000 HAL_I2C_MspInit
-C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s:199    .text.HAL_I2C_MspInit:00000084 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s:206    .text.HAL_I2C_MspDeInit:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s:212    .text.HAL_I2C_MspDeInit:00000000 HAL_I2C_MspDeInit
-C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s:265    .text.HAL_I2C_MspDeInit:00000038 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s:272    .text.HAL_UART_MspInit:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s:278    .text.HAL_UART_MspInit:00000000 HAL_UART_MspInit
-C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s:410    .text.HAL_UART_MspInit:000000c0 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s:418    .text.HAL_UART_MspDeInit:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s:424    .text.HAL_UART_MspDeInit:00000000 HAL_UART_MspDeInit
-C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s:477    .text.HAL_UART_MspDeInit:00000038 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s:21     .text.HAL_MspInit:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s:27     .text.HAL_MspInit:00000000 HAL_MspInit
+C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s:91     .text.HAL_MspInit:0000004c $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s:96     .text.HAL_I2C_MspInit:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s:102    .text.HAL_I2C_MspInit:00000000 HAL_I2C_MspInit
+C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s:199    .text.HAL_I2C_MspInit:00000084 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s:206    .text.HAL_I2C_MspDeInit:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s:212    .text.HAL_I2C_MspDeInit:00000000 HAL_I2C_MspDeInit
+C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s:265    .text.HAL_I2C_MspDeInit:00000038 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s:272    .text.HAL_UART_MspInit:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s:278    .text.HAL_UART_MspInit:00000000 HAL_UART_MspInit
+C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s:375    .text.HAL_UART_MspInit:00000084 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s:382    .text.HAL_UART_MspDeInit:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s:388    .text.HAL_UART_MspDeInit:00000000 HAL_UART_MspDeInit
+C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s:437    .text.HAL_UART_MspDeInit:00000030 $d
                            .group:00000000 wm4.0.f079ee757cd02b273648dd4f0fb0fb55
-                           .group:00000000 wm4.stm32f4xx_hal_conf.h.25.47f9051bf4ec028d46a7e2405ed07388
+                           .group:00000000 wm4.stm32f4xx_hal_conf.h.25.fccf087c676d024bfb22e19ee306d195
                            .group:00000000 wm4.stm32f4xx.h.38.d053a70ce905afacf9f39dda4c23396b
                            .group:00000000 wm4.stm32f429xx.h.34.42df97e3bab45b53f4e57c4e9dde2c7f
                            .group:00000000 wm4._newlib_version.h.4.6d111ab2e95434b664b53815e5c8ccba
@@ -799,12 +745,10 @@ C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s:477    .text.HAL_UART_MspDeInit:
                            .group:00000000 wm4.stm32f4xx_hal_pwr_ex.h.20.1cd454a68f4573ea11695d020c0de0f5
                            .group:00000000 wm4.stm32f4xx_hal_pwr.h.338.debc0a4a62ba54688e63ab53dd99c4ea
                            .group:00000000 wm4.stm32f4xx_hal_uart.h.21.ba8e24dd05c77faac3f3d48472e636ba
-                           .group:00000000 wm4.stm32f4xx_ll_usb.h.21.371f1231e90cf558b19e6b21e6eb7150
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccReKGro.s 			page 15
-
-
-                           .group:00000000 wm4.stm32f4xx_hal_pcd.h.155.9516e0722978902161f66a3ea59779ae
                            .group:00000000 wm4.stm32f4xx_hal.h.71.f077b42c1edb7a9e0b40aa6b2558aed9
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccRpziVk.s 			page 14
+
+
 
 UNDEFINED SYMBOLS
 HAL_GPIO_Init

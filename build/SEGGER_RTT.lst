@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
   51              		.align	2
   52              	.LC0:
   53 0000 5465726D 		.ascii	"Terminal\000"
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 2
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 2
 
 
   53      696E616C 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
   46:Core/Src/SEGGER_RTT.c **** *                                                                    *
   47:Core/Src/SEGGER_RTT.c **** **********************************************************************
   48:Core/Src/SEGGER_RTT.c **** 
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 3
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 3
 
 
   49:Core/Src/SEGGER_RTT.c **** ---------------------------END-OF-HEADER------------------------------
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  103:Core/Src/SEGGER_RTT.c ****   #endif
  104:Core/Src/SEGGER_RTT.c ****   #ifdef SEGGER_RTT_ALIGNMENT
  105:Core/Src/SEGGER_RTT.c ****     #error "Custom SEGGER_RTT_ALIGNMENT is not supported for SEGGER_RTT_CPU_CACHE_LINE_SIZE != 0"
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 4
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 4
 
 
  106:Core/Src/SEGGER_RTT.c ****   #endif
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  160:Core/Src/SEGGER_RTT.c ****   #define SEGGER_RTT_MEMCPY_USE_BYTELOOP                  0
  161:Core/Src/SEGGER_RTT.c **** #endif
  162:Core/Src/SEGGER_RTT.c **** 
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 5
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 5
 
 
  163:Core/Src/SEGGER_RTT.c **** #ifndef   SEGGER_RTT_MEMCPY
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  217:Core/Src/SEGGER_RTT.c ****   #define SEGGER_RTT_PUT_SECTION(Var, Section) Var
  218:Core/Src/SEGGER_RTT.c **** #endif
  219:Core/Src/SEGGER_RTT.c **** 
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 6
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 6
 
 
  220:Core/Src/SEGGER_RTT.c **** #if SEGGER_RTT_ALIGNMENT
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  274:Core/Src/SEGGER_RTT.c ****     #pragma data_alignment=SEGGER_RTT_CPU_CACHE_LINE_SIZE
  275:Core/Src/SEGGER_RTT.c ****     static char   _acDownBuffer[SEGGER_RTT__ROUND_UP_2_CACHE_LINE_SIZE(BUFFER_SIZE_DOWN)];
  276:Core/Src/SEGGER_RTT.c ****   #else
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 7
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 7
 
 
  277:Core/Src/SEGGER_RTT.c ****     #error "Don't know how to place _SEGGER_RTT, _acUpBuffer, _acDownBuffer cache-line aligned"
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  316:Core/Src/SEGGER_RTT.c ****   static const char _aInitStr[] = "\0\0\0\0\0\0TTR REGGES";  // Init complete ID string to make sur
  317:Core/Src/SEGGER_RTT.c ****   unsigned i;
  318:Core/Src/SEGGER_RTT.c ****   //
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 8
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 8
 
 
  319:Core/Src/SEGGER_RTT.c ****   // Initialize control block
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  116 0044 DA62     		str	r2, [r3, #44]
  334:Core/Src/SEGGER_RTT.c ****   //
  335:Core/Src/SEGGER_RTT.c ****   // Initialize down buffer 0
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 9
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 9
 
 
  336:Core/Src/SEGGER_RTT.c ****   //
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  156 0074 7B68     		ldr	r3, [r7, #4]
  157 0076 C3F10F03 		rsb	r3, r3, #15
  158              		.loc 1 350 27
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 10
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 10
 
 
  159 007a 0D4A     		ldr	r2, .L4+16
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  209              		.thumb_func
  211              	_WriteBlocking:
  212              	.LFB1:
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 11
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 11
 
 
  354:Core/Src/SEGGER_RTT.c **** 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  236 0012 DB68     		ldr	r3, [r3, #12]
  237 0014 FB61     		str	r3, [r7, #28]
  238              	.L10:
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 12
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 12
 
 
  385:Core/Src/SEGGER_RTT.c ****   do {
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  284 0056 9342     		cmp	r3, r2
  285 0058 28BF     		it	cs
  286 005a 1346     		movcs	r3, r2
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 13
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 13
 
 
  287 005c 7B62     		str	r3, [r7, #36]
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  325 0098 9A42     		cmp	r2, r3
  326 009a 01D1     		bne	.L9
  410:Core/Src/SEGGER_RTT.c ****       WrOff = 0u;
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 14
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 14
 
 
  327              		.loc 1 410 13
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  424:Core/Src/SEGGER_RTT.c **** *    and updates the associated write pointer which is periodically
  425:Core/Src/SEGGER_RTT.c **** *    read by the host.
  426:Core/Src/SEGGER_RTT.c **** *    It is callers responsibility to make sure data actually fits in buffer.
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 15
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 15
 
 
  427:Core/Src/SEGGER_RTT.c **** *
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  447:Core/Src/SEGGER_RTT.c ****     //
  448:Core/Src/SEGGER_RTT.c ****     pDst = (pRing->pBuffer + WrOff) + SEGGER_RTT_UNCACHED_OFF;
  404              		.loc 1 448 18
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 16
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 16
 
 
  405 0024 FB68     		ldr	r3, [r7, #12]
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  477:Core/Src/SEGGER_RTT.c ****     pRing->WrOff = NumBytes - Rem;
  478:Core/Src/SEGGER_RTT.c **** #else
  479:Core/Src/SEGGER_RTT.c ****     NumBytesAtOnce = Rem;
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 17
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 17
 
 
  480:Core/Src/SEGGER_RTT.c ****     pDst = (pRing->pBuffer + WrOff) + SEGGER_RTT_UNCACHED_OFF;
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  467              		.syntax unified
  468              	@ 485 "Core/Src/SEGGER_RTT.c" 1
  469 007e BFF35F8F 		dmb
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 18
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 18
 
 
  470              	
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  510              	.LCFI16:
  511              		.cfi_def_cfa_offset 24
  512 0004 00AF     		add	r7, sp, #0
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 19
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 19
 
 
  513              	.LCFI17:
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  516:Core/Src/SEGGER_RTT.c **** *  Function description
  517:Core/Src/SEGGER_RTT.c **** *    Returns the number of bytes that can be written to the ring
  518:Core/Src/SEGGER_RTT.c **** *    buffer without blocking.
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 20
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 20
 
 
  519:Core/Src/SEGGER_RTT.c **** *
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  593              		.loc 1 537 42
  594 0024 3B69     		ldr	r3, [r7, #16]
  595 0026 1344     		add	r3, r3, r2
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 21
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 21
 
 
  596              		.loc 1 537 7
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  553:Core/Src/SEGGER_RTT.c **** *       SEGGER_RTT_ReadUpBufferNoLock()
  554:Core/Src/SEGGER_RTT.c **** *
  555:Core/Src/SEGGER_RTT.c **** *  Function description
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 22
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 22
 
 
  556:Core/Src/SEGGER_RTT.c **** *    Reads characters from SEGGER real-time-terminal control block
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  664              		.loc 1 582 3 is_stmt 0 discriminator 1
  665 001a FFF7FEFF 		bl	_DoInit
  666              	.L24:
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 23
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 23
 
 
  667              	.LBE2:
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  710 0060 7B61     		str	r3, [r7, #20]
  594:Core/Src/SEGGER_RTT.c ****     pSrc = (pRing->pBuffer + RdOff) + SEGGER_RTT_UNCACHED_OFF;
  711              		.loc 1 594 18
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 24
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 24
 
 
  712 0062 FB69     		ldr	r3, [r7, #28]
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  748 009c 9A42     		cmp	r2, r3
  749 009e 01D1     		bne	.L25
  613:Core/Src/SEGGER_RTT.c ****       RdOff = 0u;
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 25
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 25
 
 
  750              		.loc 1 613 13
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  785 00d6 1344     		add	r3, r3, r2
  786 00d8 FB62     		str	r3, [r7, #44]
  633:Core/Src/SEGGER_RTT.c ****     pBuffer      += NumBytesRem;
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 26
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 26
 
 
  787              		.loc 1 633 18
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  828              		.cfi_endproc
  829              	.LFE5:
  831              		.section	.text.SEGGER_RTT_ReadNoLock,"ax",%progbits
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 27
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 27
 
 
  832              		.align	1
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  859              		.loc 1 674 3
  860 000c 3E4B     		ldr	r3, .L37
  861 000e 3B62     		str	r3, [r7, #32]
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 28
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 28
 
 
  862 0010 3B6A     		ldr	r3, [r7, #32]
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  906 0054 7B61     		str	r3, [r7, #20]
  685:Core/Src/SEGGER_RTT.c ****     NumBytesRem = MIN(NumBytesRem, BufferSize);
  907              		.loc 1 685 17
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 29
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 29
 
 
  908 0056 7A69     		ldr	r2, [r7, #20]
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  702:Core/Src/SEGGER_RTT.c ****     // Handle wrap-around of buffer
  703:Core/Src/SEGGER_RTT.c ****     //
  704:Core/Src/SEGGER_RTT.c ****     if (RdOff == pRing->SizeOfBuffer) {
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 30
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 30
 
 
  946              		.loc 1 704 23
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  981 00c8 7A69     		ldr	r2, [r7, #20]
  982 00ca 3969     		ldr	r1, [r7, #16]
  983 00cc 786A     		ldr	r0, [r7, #36]
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 31
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 31
 
 
  984 00ce FFF7FEFF 		bl	memcpy
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  1026 0106 80BD     		pop	{r7, pc}
  1027              	.L38:
  1028              		.align	2
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 32
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 32
 
 
  1029              	.L37:
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  1058 0006 F860     		str	r0, [r7, #12]
  1059 0008 B960     		str	r1, [r7, #8]
  1060 000a 7A60     		str	r2, [r7, #4]
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 33
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 33
 
 
  1061              	.LBB4:
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  1101              		.cfi_endproc
  1102              	.LFE7:
  1104              		.section	.text.SEGGER_RTT_Read,"ax",%progbits
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 34
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 34
 
 
  1105              		.align	1
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  1139              	@ 0 "" 2
  1140              		.thumb
  1141              		.syntax unified
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 35
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 35
 
 
  1142 0018 7B61     		str	r3, [r7, #20]
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  813:Core/Src/SEGGER_RTT.c **** *
  814:Core/Src/SEGGER_RTT.c **** *  Function description
  815:Core/Src/SEGGER_RTT.c **** *    Stores a specified number of characters in SEGGER RTT
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 36
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 36
 
 
  816:Core/Src/SEGGER_RTT.c **** *    control block.
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  1210 001a DB00     		lsls	r3, r3, #3
  1211 001c 404A     		ldr	r2, .L53
  1212 001e 1344     		add	r3, r3, r2
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 37
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 37
 
 
  1213 0020 7B61     		str	r3, [r7, #20]
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  1258 005a DB68     		ldr	r3, [r3, #12]
  1259              		.loc 1 851 26
  1260 005c D21A     		subs	r2, r2, r3
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 38
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 38
 
 
  1261              		.loc 1 851 53
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  1307 0098 9A42     		cmp	r2, r3
  1308 009a F2D2     		bcs	.L49
  1309              	.L47:
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 39
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 39
 
 
  857:Core/Src/SEGGER_RTT.c ****     }
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  1342 00c6 BFF35F8F 		dmb
  1343              	
  1344              	@ 0 "" 2
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 40
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 40
 
 
  879:Core/Src/SEGGER_RTT.c ****       pRing->WrOff += NumBytes;
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  1380 00f6 BFF35F8F 		dmb
  1381              	
  1382              	@ 0 "" 2
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 41
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 41
 
 
  898:Core/Src/SEGGER_RTT.c ****       pRing->WrOff = 0;
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  905:Core/Src/SEGGER_RTT.c **** 
  906:Core/Src/SEGGER_RTT.c **** /*********************************************************************
  907:Core/Src/SEGGER_RTT.c **** *
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 42
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 42
 
 
  908:Core/Src/SEGGER_RTT.c **** *       SEGGER_RTT_WriteSkipNoLock
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  962:Core/Src/SEGGER_RTT.c ****       pRing->WrOff = WrOff + NumBytes;
  963:Core/Src/SEGGER_RTT.c ****       return 1;
  964:Core/Src/SEGGER_RTT.c ****     }
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 43
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 43
 
 
  965:Core/Src/SEGGER_RTT.c ****     Avail += RdOff;                                     // Space incl. wrap-around
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
 1019:Core/Src/SEGGER_RTT.c **** *        and may only be called after RTT has been initialized.
 1020:Core/Src/SEGGER_RTT.c **** *        Either by calling SEGGER_RTT_Init() or calling another RTT API function first.
 1021:Core/Src/SEGGER_RTT.c **** *
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 44
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 44
 
 
 1022:Core/Src/SEGGER_RTT.c **** *  Additional information
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  1468 0028 29D0     		beq	.L56
  1469 002a 022B     		cmp	r3, #2
  1470 002c 2ED8     		bhi	.L57
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 45
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 45
 
 
  1471 002e 002B     		cmp	r3, #0
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  1505 0060 FFF7FEFF 		bl	_GetAvailWriteSpace
  1506 0064 3861     		str	r0, [r7, #16]
 1058:Core/Src/SEGGER_RTT.c ****     Status = Avail < NumBytes ? Avail : NumBytes;
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 46
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 46
 
 
  1507              		.loc 1 1058 12
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  1544 0098 BD46     		mov	sp, r7
  1545              	.LCFI55:
  1546              		.cfi_def_cfa_register 13
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 47
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 47
 
 
  1547              		@ sp needed
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  1578              	.LCFI58:
  1579              		.cfi_def_cfa_register 7
  1580 0006 F860     		str	r0, [r7, #12]
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 48
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 48
 
 
  1581 0008 B960     		str	r1, [r7, #8]
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  1615 0040 3A69     		ldr	r2, [r7, #16]
  1616 0042 7B68     		ldr	r3, [r7, #4]
  1617 0044 9A42     		cmp	r2, r3
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 49
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 49
 
 
  1618 0046 02D2     		bcs	.L71
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
 1136:Core/Src/SEGGER_RTT.c ****     //
 1137:Core/Src/SEGGER_RTT.c ****     // If we are in blocking mode, output everything.
 1138:Core/Src/SEGGER_RTT.c ****     //
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 50
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 50
 
 
 1139:Core/Src/SEGGER_RTT.c ****     Status = _WriteBlocking(pRing, pData, NumBytes);
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
 1152:Core/Src/SEGGER_RTT.c **** *
 1153:Core/Src/SEGGER_RTT.c **** *       SEGGER_RTT_WriteDownBuffer
 1154:Core/Src/SEGGER_RTT.c **** *
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 51
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 51
 
 
 1155:Core/Src/SEGGER_RTT.c **** *  Function description
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  1727              	.L78:
  1728              	.LBE6:
  1729              	.LBB7:
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 52
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 52
 
 
 1180:Core/Src/SEGGER_RTT.c ****   SEGGER_RTT_LOCK();
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  1780              		.thumb
  1781              		.thumb_func
  1783              	SEGGER_RTT_Write:
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 53
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 53
 
 
  1784              	.LFB13:
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  1814              	.L83:
  1815              	.LBE8:
  1816              	.LBB9:
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 54
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 54
 
 
 1209:Core/Src/SEGGER_RTT.c ****   SEGGER_RTT_LOCK();
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  1867              		.thumb
  1868              		.thumb_func
  1870              	SEGGER_RTT_WriteString:
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 55
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 55
 
 
  1871              	.LFB14:
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
 1240:Core/Src/SEGGER_RTT.c **** }
  1899              		.loc 1 1240 1
  1900 001e 1846     		mov	r0, r3
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 56
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 56
 
 
  1901 0020 1037     		adds	r7, r7, #16
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  1932              		.cfi_def_cfa_offset 32
  1933 0004 00AF     		add	r7, sp, #0
  1934              	.LCFI78:
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 57
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 57
 
 
  1935              		.cfi_def_cfa_register 7
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  1970 0038 7A69     		ldr	r2, [r7, #20]
  1971 003a 9A42     		cmp	r2, r3
  1972 003c 10D0     		beq	.L91
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 58
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 58
 
 
 1285:Core/Src/SEGGER_RTT.c ****     pDst = (pRing->pBuffer + pRing->WrOff) + SEGGER_RTT_UNCACHED_OFF;
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  2016              		.cfi_def_cfa_register 13
  2017              		@ sp needed
  2018 006c 5DF8047B 		ldr	r7, [sp], #4
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 59
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 59
 
 
  2019              	.LCFI81:
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  2055 0008 0B46     		mov	r3, r1
  2056 000a FB70     		strb	r3, [r7, #3]
  2057              	.LBB10:
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 60
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 60
 
 
 1316:Core/Src/SEGGER_RTT.c ****   SEGGER_RTT_BUFFER_UP* pRing;
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  2095              		.loc 1 1332 9
  2096 0042 0133     		adds	r3, r3, #1
  2097 0044 FB61     		str	r3, [r7, #28]
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 61
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 61
 
 
 1333:Core/Src/SEGGER_RTT.c ****   if (WrOff == pRing->SizeOfBuffer) {
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
 1344:Core/Src/SEGGER_RTT.c ****     Status = 1;
  2141              		.loc 1 1344 12
  2142 007a 0123     		movs	r3, #1
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 62
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 62
 
 
  2143 007c BB61     		str	r3, [r7, #24]
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
 1356:Core/Src/SEGGER_RTT.c ****  /*********************************************************************
 1357:Core/Src/SEGGER_RTT.c **** *
 1358:Core/Src/SEGGER_RTT.c **** *       SEGGER_RTT_PutChar
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 63
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 63
 
 
 1359:Core/Src/SEGGER_RTT.c **** *
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  2218              	.LBE12:
  2219              	.LBB13:
 1383:Core/Src/SEGGER_RTT.c ****   SEGGER_RTT_LOCK();
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 64
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 64
 
 
  2220              		.loc 1 1383 3 is_stmt 1
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  2259 0054 FB68     		ldr	r3, [r7, #12]
  2260 0056 5B69     		ldr	r3, [r3, #20]
  2261              		.loc 1 1398 6
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 65
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 65
 
 
  2262 0058 022B     		cmp	r3, #2
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  2304 0088 FB68     		ldr	r3, [r7, #12]
  2305 008a FA69     		ldr	r2, [r7, #28]
  2306 008c DA60     		str	r2, [r3, #12]
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 66
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 66
 
 
 1411:Core/Src/SEGGER_RTT.c ****     Status = 1;
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  2353              	.LFB18:
 1421:Core/Src/SEGGER_RTT.c **** 
 1422:Core/Src/SEGGER_RTT.c **** /*********************************************************************
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 67
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 67
 
 
 1423:Core/Src/SEGGER_RTT.c **** *
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  2387              	.L115:
 1444:Core/Src/SEGGER_RTT.c ****   } else {
 1445:Core/Src/SEGGER_RTT.c ****     r = -1;
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 68
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 68
 
 
  2388              		.loc 1 1445 7
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  2424              		.cfi_offset 14, -4
  2425 0002 82B0     		sub	sp, sp, #8
  2426              	.LCFI98:
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 69
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 69
 
 
  2427              		.cfi_def_cfa_offset 16
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
 1486:Core/Src/SEGGER_RTT.c **** *    (1) This function is only specified for accesses to RTT buffer 0
 1487:Core/Src/SEGGER_RTT.c **** */
 1488:Core/Src/SEGGER_RTT.c **** int SEGGER_RTT_HasKey(void) {
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 70
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 70
 
 
  2463              		.loc 1 1488 29
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  2508 0030 01E0     		b	.L124
  2509              	.L123:
 1498:Core/Src/SEGGER_RTT.c ****   } else {
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 71
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 71
 
 
 1499:Core/Src/SEGGER_RTT.c ****     r = 0;
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  2548 0000 80B4     		push	{r7}
  2549              	.LCFI107:
  2550              		.cfi_def_cfa_offset 4
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 72
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 72
 
 
  2551              		.cfi_offset 7, -4
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  2598              	.LFE21:
  2600              		.section	.text.SEGGER_RTT_HasDataUp,"ax",%progbits
  2601              		.align	1
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 73
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 73
 
 
  2602              		.global	SEGGER_RTT_HasDataUp
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  2638 001e BB60     		str	r3, [r7, #8]
 1543:Core/Src/SEGGER_RTT.c ****   return pRing->WrOff - v;
  2639              		.loc 1 1543 15
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 74
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 74
 
 
  2640 0020 FB68     		ldr	r3, [r7, #12]
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
 1565:Core/Src/SEGGER_RTT.c **** */
 1566:Core/Src/SEGGER_RTT.c **** int SEGGER_RTT_AllocDownBuffer(const char* sName, void* pBuffer, unsigned BufferSize, unsigned Flag
  2675              		.loc 1 1566 103
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 75
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 75
 
 
  2676              		.cfi_startproc
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  2723 0032 0023     		movs	r3, #0
  2724 0034 FB61     		str	r3, [r7, #28]
  2725              	.L140:
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 76
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 76
 
 
 1574:Core/Src/SEGGER_RTT.c ****   do {
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  2771 007a FA68     		ldr	r2, [r7, #12]
  2772 007c 1A60     		str	r2, [r3]
 1582:Core/Src/SEGGER_RTT.c ****     pRTTCB->aDown[BufferIndex].pBuffer      = (char*)pBuffer;
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 77
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 77
 
 
  2773              		.loc 1 1582 45
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  2823 00d8 DB00     		lsls	r3, r3, #3
  2824 00da 0B44     		add	r3, r3, r1
  2825 00dc 7433     		adds	r3, r3, #116
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 78
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 78
 
 
  2826 00de 3A68     		ldr	r2, [r7]
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  2874              		.syntax unified
  2875              		.thumb
  2876              		.thumb_func
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 79
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 79
 
 
  2878              	SEGGER_RTT_AllocUpBuffer:
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  2906 0018 532B     		cmp	r3, #83
  2907 001a 01D0     		beq	.L148
  2908              		.loc 1 1619 3 is_stmt 0 discriminator 1
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 80
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 80
 
 
  2909 001c FFF7FEFF 		bl	_DoInit
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  2954 005a 9A42     		cmp	r2, r3
  2955 005c EBDB     		blt	.L151
  2956 005e 00E0     		b	.L150
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 81
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 81
 
 
  2957              	.L155:
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  3005 00ae 1346     		mov	r3, r2
  3006 00b0 5B00     		lsls	r3, r3, #1
  3007 00b2 1344     		add	r3, r3, r2
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 82
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 82
 
 
  3008 00b4 DB00     		lsls	r3, r3, #3
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  3055              	@ 0 "" 2
  3056              		.thumb
  3057              		.syntax unified
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 83
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 83
 
 
  3058              	.LBE18:
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
 1668:Core/Src/SEGGER_RTT.c **** *    Buffer name and flags can be reconfigured using the appropriate functions.
 1669:Core/Src/SEGGER_RTT.c **** */
 1670:Core/Src/SEGGER_RTT.c **** int SEGGER_RTT_ConfigUpBuffer(unsigned BufferIndex, const char* sName, void* pBuffer, unsigned Buff
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 84
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 84
 
 
  3087              		.loc 1 1670 124
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  3133              		
  3134              	@ 0 "" 2
  3135              		.thumb
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 85
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 85
 
 
  3136              		.syntax unified
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  3180              	@ 1688 "Core/Src/SEGGER_RTT.c" 1
  3181 0076 83F31188 		msr   basepri, r3  
  3182              		
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 86
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 86
 
 
  3183              	@ 0 "" 2
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
 1704:Core/Src/SEGGER_RTT.c **** *
 1705:Core/Src/SEGGER_RTT.c **** *  Parameters
 1706:Core/Src/SEGGER_RTT.c **** *    BufferIndex  Index of the buffer to configure.
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 87
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 87
 
 
 1707:Core/Src/SEGGER_RTT.c **** *    sName        Pointer to a constant name string.
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  3256              		.loc 1 1728 10 is_stmt 1
  3257 0020 1C4B     		ldr	r3, .L172
  3258 0022 FB61     		str	r3, [r7, #28]
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 88
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 88
 
 
 1729:Core/Src/SEGGER_RTT.c ****   if (BufferIndex < SEGGER_RTT_MAX_NUM_DOWN_BUFFERS) {
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
 1737:Core/Src/SEGGER_RTT.c ****       pDown->WrOff        = 0u;
  3305              		.loc 1 1737 27
  3306 0068 7B69     		ldr	r3, [r7, #20]
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 89
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 89
 
 
  3307 006a 0022     		movs	r2, #0
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  3351              		@ sp needed
  3352 0092 80BD     		pop	{r7, pc}
  3353              	.L173:
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 90
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 90
 
 
  3354              		.align	2
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  3387              		.loc 1 1770 3
  3388 000a 174B     		ldr	r3, .L179
  3389 000c BB61     		str	r3, [r7, #24]
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 91
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 91
 
 
  3390 000e BB69     		ldr	r3, [r7, #24]
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  3438              	@ 0 "" 2
  3439              		.thumb
  3440              		.syntax unified
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 92
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 92
 
 
  3441              	.LBE24:
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
 1795:Core/Src/SEGGER_RTT.c **** *
 1796:Core/Src/SEGGER_RTT.c **** *  Return value
 1797:Core/Src/SEGGER_RTT.c **** *    >= 0  O.K.
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 93
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 93
 
 
 1798:Core/Src/SEGGER_RTT.c **** *     < 0  Error
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  3522 002e 81F31188 		msr   basepri, r1  
  3523              		
  3524              	@ 0 "" 2
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 94
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 94
 
 
  3525              		.thumb
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  3570              		.cfi_def_cfa_register 13
  3571              		@ sp needed
  3572 0066 80BD     		pop	{r7, pc}
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 95
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 95
 
 
  3573              	.L187:
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
 1840:Core/Src/SEGGER_RTT.c **** 
 1841:Core/Src/SEGGER_RTT.c ****   INIT();
  3607              		.loc 1 1841 3
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 96
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 96
 
 
  3608 000a 174B     		ldr	r3, .L193
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  3656 004e 83F31188 		msr   basepri, r3  
  3657              		
  3658              	@ 0 "" 2
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 97
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 97
 
 
  3659              		.thumb
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
 1864:Core/Src/SEGGER_RTT.c **** *    BufferIndex  Index of the buffer to renamed.
 1865:Core/Src/SEGGER_RTT.c **** *    Flags        Flags to set for the buffer.
 1866:Core/Src/SEGGER_RTT.c **** *                 Flags[31:24] are used for validity check and must be zero. Flags[23:2] are reserv
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 98
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 98
 
 
 1867:Core/Src/SEGGER_RTT.c **** *
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  3739              	@ 1880 "Core/Src/SEGGER_RTT.c" 1
  3740 0026 EFF31183 		mrs   r3, basepri  
  3741 002a 4FF02001 		mov   r1, #32       
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 99
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 99
 
 
  3742 002e 81F31188 		msr   basepri, r1  
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  3787              		.cfi_def_cfa_offset 8
  3788 0064 BD46     		mov	sp, r7
  3789              	.LCFI158:
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 100
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 100
 
 
  3790              		.cfi_def_cfa_register 13
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  3834              		.thumb_func
  3836              	SEGGER_RTT_SetTerminal:
  3837              	.LFB32:
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 101
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 101
 
 
 1903:Core/Src/SEGGER_RTT.c **** 
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  3867              	.LBE31:
 1928:Core/Src/SEGGER_RTT.c ****   r = 0;
  3868              		.loc 1 1928 5 is_stmt 1
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 102
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 102
 
 
  3869 001c 0023     		movs	r3, #0
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  3915 005e 7869     		ldr	r0, [r7, #20]
  3916 0060 FFF7FEFF 		bl	_WriteBlocking
  3917 0064 14E0     		b	.L207
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 103
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 103
 
 
  3918              	.L206:
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
 1950:Core/Src/SEGGER_RTT.c ****   return r;
  3959              		.loc 1 1950 10
  3960 009e FB69     		ldr	r3, [r7, #28]
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 104
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 104
 
 
 1951:Core/Src/SEGGER_RTT.c **** }
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  3997              		.cfi_offset 7, -8
  3998              		.cfi_offset 14, -4
  3999 0002 88B0     		sub	sp, sp, #32
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 105
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 105
 
 
  4000              	.LCFI167:
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
 1992:Core/Src/SEGGER_RTT.c ****     //
 1993:Core/Src/SEGGER_RTT.c ****     SEGGER_RTT_LOCK();
  4033              		.loc 1 1993 5
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 106
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 106
 
 
  4034              		.syntax unified
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
 2008:Core/Src/SEGGER_RTT.c ****       break;
  4074              		.loc 1 2008 7
  4075 006e 49E0     		b	.L222
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 107
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 107
 
 
  4076              	.L220:
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  4111 00a6 1946     		mov	r1, r3
  4112 00a8 7869     		ldr	r0, [r7, #20]
  4113 00aa FFF7FEFF 		bl	_PostTerminalSwitch
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 108
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 108
 
 
 2019:Core/Src/SEGGER_RTT.c ****         _PostTerminalSwitch(pRing, _ActiveTerminal);
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
 2030:Core/Src/SEGGER_RTT.c ****       break;
  4157              		.loc 1 2030 7
  4158 00fa 03E0     		b	.L222
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 109
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 109
 
 
  4159              	.L217:
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  4200              		.cfi_endproc
  4201              	.LFE33:
  4203              		.section	.text.SEGGER_RTT_GetAvailWriteSpace,"ax",%progbits
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 110
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 110
 
 
  4204              		.align	1
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  4240 001c FFF7FEFF 		bl	_GetAvailWriteSpace
  4241 0020 0346     		mov	r3, r0
 2063:Core/Src/SEGGER_RTT.c **** }
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 111
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 111
 
 
  4242              		.loc 1 2063 1
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  4282              		.cfi_def_cfa_register 7
  4283 0006 7860     		str	r0, [r7, #4]
 2080:Core/Src/SEGGER_RTT.c ****   unsigned RdOff;
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 112
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 112
 
 
 2081:Core/Src/SEGGER_RTT.c ****   unsigned WrOff;
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  4324 004a 1346     		mov	r3, r2
  4325 004c 5B00     		lsls	r3, r3, #1
  4326 004e 1344     		add	r3, r3, r2
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 113
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 113
 
 
  4327 0050 DB00     		lsls	r3, r3, #3
@@ -6773,127 +6773,127 @@ ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 1
  4372              		.file 4 "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.2 Rel1/arm-none-eabi/include/sy
  4373              		.file 5 "Core/Inc/SEGGER_RTT.h"
  4374              		.file 6 "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.2 Rel1/arm-none-eabi/include/st
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 114
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 114
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 SEGGER_RTT.c
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:21     .rodata._aTerminalId:00000000 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:24     .rodata._aTerminalId:00000000 _aTerminalId
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:31     .bss._SEGGER_RTT:00000000 _SEGGER_RTT
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:28     .bss._SEGGER_RTT:00000000 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:34     .bss._acUpBuffer:00000000 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:37     .bss._acUpBuffer:00000000 _acUpBuffer
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:40     .bss._acDownBuffer:00000000 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:43     .bss._acDownBuffer:00000000 _acDownBuffer
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:48     .bss._ActiveTerminal:00000000 _ActiveTerminal
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:49     .bss._ActiveTerminal:00000000 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:51     .rodata:00000000 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:55     .text._DoInit:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:60     .text._DoInit:00000000 _DoInit
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:197    .text._DoInit:000000a0 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:4366   .rodata._aInitStr.0:00000000 _aInitStr.0
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:206    .text._WriteBlocking:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:211    .text._WriteBlocking:00000000 _WriteBlocking
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:363    .text._WriteNoCheck:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:368    .text._WriteNoCheck:00000000 _WriteNoCheck
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:493    .text._PostTerminalSwitch:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:498    .text._PostTerminalSwitch:00000000 _PostTerminalSwitch
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:546    .text._PostTerminalSwitch:00000030 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:551    .text._GetAvailWriteSpace:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:556    .text._GetAvailWriteSpace:00000000 _GetAvailWriteSpace
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:629    .text.SEGGER_RTT_ReadUpBufferNoLock:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:635    .text.SEGGER_RTT_ReadUpBufferNoLock:00000000 SEGGER_RTT_ReadUpBufferNoLock
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:827    .text.SEGGER_RTT_ReadUpBufferNoLock:00000108 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:832    .text.SEGGER_RTT_ReadNoLock:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:838    .text.SEGGER_RTT_ReadNoLock:00000000 SEGGER_RTT_ReadNoLock
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1030   .text.SEGGER_RTT_ReadNoLock:00000108 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1035   .text.SEGGER_RTT_ReadUpBuffer:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1041   .text.SEGGER_RTT_ReadUpBuffer:00000000 SEGGER_RTT_ReadUpBuffer
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1105   .text.SEGGER_RTT_Read:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1111   .text.SEGGER_RTT_Read:00000000 SEGGER_RTT_Read
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1175   .text.SEGGER_RTT_WriteWithOverwriteNoLock:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1181   .text.SEGGER_RTT_WriteWithOverwriteNoLock:00000000 SEGGER_RTT_WriteWithOverwriteNoLock
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1419   .text.SEGGER_RTT_WriteWithOverwriteNoLock:00000120 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1424   .text.SEGGER_RTT_WriteDownBufferNoLock:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1430   .text.SEGGER_RTT_WriteDownBufferNoLock:00000000 SEGGER_RTT_WriteDownBufferNoLock
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1552   .text.SEGGER_RTT_WriteDownBufferNoLock:0000009c $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1557   .text.SEGGER_RTT_WriteNoLock:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1563   .text.SEGGER_RTT_WriteNoLock:00000000 SEGGER_RTT_WriteNoLock
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1685   .text.SEGGER_RTT_WriteNoLock:0000009c $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1690   .text.SEGGER_RTT_WriteDownBuffer:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1696   .text.SEGGER_RTT_WriteDownBuffer:00000000 SEGGER_RTT_WriteDownBuffer
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1772   .text.SEGGER_RTT_WriteDownBuffer:00000048 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1777   .text.SEGGER_RTT_Write:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1783   .text.SEGGER_RTT_Write:00000000 SEGGER_RTT_Write
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1859   .text.SEGGER_RTT_Write:00000048 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1864   .text.SEGGER_RTT_WriteString:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1870   .text.SEGGER_RTT_WriteString:00000000 SEGGER_RTT_WriteString
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1913   .text.SEGGER_RTT_PutCharSkipNoLock:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:1919   .text.SEGGER_RTT_PutCharSkipNoLock:00000000 SEGGER_RTT_PutCharSkipNoLock
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2026   .text.SEGGER_RTT_PutCharSkipNoLock:00000074 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2031   .text.SEGGER_RTT_PutCharSkip:00000000 $t
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 115
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:21     .rodata._aTerminalId:00000000 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:24     .rodata._aTerminalId:00000000 _aTerminalId
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:31     .bss._SEGGER_RTT:00000000 _SEGGER_RTT
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:28     .bss._SEGGER_RTT:00000000 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:34     .bss._acUpBuffer:00000000 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:37     .bss._acUpBuffer:00000000 _acUpBuffer
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:40     .bss._acDownBuffer:00000000 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:43     .bss._acDownBuffer:00000000 _acDownBuffer
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:48     .bss._ActiveTerminal:00000000 _ActiveTerminal
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:49     .bss._ActiveTerminal:00000000 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:51     .rodata:00000000 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:55     .text._DoInit:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:60     .text._DoInit:00000000 _DoInit
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:197    .text._DoInit:000000a0 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:4366   .rodata._aInitStr.0:00000000 _aInitStr.0
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:206    .text._WriteBlocking:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:211    .text._WriteBlocking:00000000 _WriteBlocking
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:363    .text._WriteNoCheck:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:368    .text._WriteNoCheck:00000000 _WriteNoCheck
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:493    .text._PostTerminalSwitch:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:498    .text._PostTerminalSwitch:00000000 _PostTerminalSwitch
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:546    .text._PostTerminalSwitch:00000030 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:551    .text._GetAvailWriteSpace:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:556    .text._GetAvailWriteSpace:00000000 _GetAvailWriteSpace
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:629    .text.SEGGER_RTT_ReadUpBufferNoLock:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:635    .text.SEGGER_RTT_ReadUpBufferNoLock:00000000 SEGGER_RTT_ReadUpBufferNoLock
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:827    .text.SEGGER_RTT_ReadUpBufferNoLock:00000108 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:832    .text.SEGGER_RTT_ReadNoLock:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:838    .text.SEGGER_RTT_ReadNoLock:00000000 SEGGER_RTT_ReadNoLock
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1030   .text.SEGGER_RTT_ReadNoLock:00000108 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1035   .text.SEGGER_RTT_ReadUpBuffer:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1041   .text.SEGGER_RTT_ReadUpBuffer:00000000 SEGGER_RTT_ReadUpBuffer
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1105   .text.SEGGER_RTT_Read:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1111   .text.SEGGER_RTT_Read:00000000 SEGGER_RTT_Read
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1175   .text.SEGGER_RTT_WriteWithOverwriteNoLock:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1181   .text.SEGGER_RTT_WriteWithOverwriteNoLock:00000000 SEGGER_RTT_WriteWithOverwriteNoLock
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1419   .text.SEGGER_RTT_WriteWithOverwriteNoLock:00000120 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1424   .text.SEGGER_RTT_WriteDownBufferNoLock:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1430   .text.SEGGER_RTT_WriteDownBufferNoLock:00000000 SEGGER_RTT_WriteDownBufferNoLock
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1552   .text.SEGGER_RTT_WriteDownBufferNoLock:0000009c $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1557   .text.SEGGER_RTT_WriteNoLock:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1563   .text.SEGGER_RTT_WriteNoLock:00000000 SEGGER_RTT_WriteNoLock
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1685   .text.SEGGER_RTT_WriteNoLock:0000009c $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1690   .text.SEGGER_RTT_WriteDownBuffer:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1696   .text.SEGGER_RTT_WriteDownBuffer:00000000 SEGGER_RTT_WriteDownBuffer
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1772   .text.SEGGER_RTT_WriteDownBuffer:00000048 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1777   .text.SEGGER_RTT_Write:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1783   .text.SEGGER_RTT_Write:00000000 SEGGER_RTT_Write
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1859   .text.SEGGER_RTT_Write:00000048 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1864   .text.SEGGER_RTT_WriteString:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1870   .text.SEGGER_RTT_WriteString:00000000 SEGGER_RTT_WriteString
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1913   .text.SEGGER_RTT_PutCharSkipNoLock:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:1919   .text.SEGGER_RTT_PutCharSkipNoLock:00000000 SEGGER_RTT_PutCharSkipNoLock
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2026   .text.SEGGER_RTT_PutCharSkipNoLock:00000074 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2031   .text.SEGGER_RTT_PutCharSkip:00000000 $t
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 115
 
 
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2037   .text.SEGGER_RTT_PutCharSkip:00000000 SEGGER_RTT_PutCharSkip
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2175   .text.SEGGER_RTT_PutCharSkip:00000094 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2180   .text.SEGGER_RTT_PutChar:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2186   .text.SEGGER_RTT_PutChar:00000000 SEGGER_RTT_PutChar
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2341   .text.SEGGER_RTT_PutChar:000000a8 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2346   .text.SEGGER_RTT_GetKey:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2352   .text.SEGGER_RTT_GetKey:00000000 SEGGER_RTT_GetKey
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2408   .text.SEGGER_RTT_WaitKey:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2414   .text.SEGGER_RTT_WaitKey:00000000 SEGGER_RTT_WaitKey
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2455   .text.SEGGER_RTT_HasKey:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2461   .text.SEGGER_RTT_HasKey:00000000 SEGGER_RTT_HasKey
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2529   .text.SEGGER_RTT_HasKey:00000040 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2535   .text.SEGGER_RTT_HasData:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2541   .text.SEGGER_RTT_HasData:00000000 SEGGER_RTT_HasData
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2596   .text.SEGGER_RTT_HasData:00000034 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2601   .text.SEGGER_RTT_HasDataUp:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2607   .text.SEGGER_RTT_HasDataUp:00000000 SEGGER_RTT_HasDataUp
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2662   .text.SEGGER_RTT_HasDataUp:00000034 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2667   .text.SEGGER_RTT_AllocDownBuffer:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2673   .text.SEGGER_RTT_AllocDownBuffer:00000000 SEGGER_RTT_AllocDownBuffer
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2867   .text.SEGGER_RTT_AllocDownBuffer:00000100 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2872   .text.SEGGER_RTT_AllocUpBuffer:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:2878   .text.SEGGER_RTT_AllocUpBuffer:00000000 SEGGER_RTT_AllocUpBuffer
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3074   .text.SEGGER_RTT_AllocUpBuffer:00000104 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3079   .text.SEGGER_RTT_ConfigUpBuffer:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3085   .text.SEGGER_RTT_ConfigUpBuffer:00000000 SEGGER_RTT_ConfigUpBuffer
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3211   .text.SEGGER_RTT_ConfigUpBuffer:00000090 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3216   .text.SEGGER_RTT_ConfigDownBuffer:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3222   .text.SEGGER_RTT_ConfigDownBuffer:00000000 SEGGER_RTT_ConfigDownBuffer
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3356   .text.SEGGER_RTT_ConfigDownBuffer:00000094 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3361   .text.SEGGER_RTT_SetNameUpBuffer:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3367   .text.SEGGER_RTT_SetNameUpBuffer:00000000 SEGGER_RTT_SetNameUpBuffer
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3466   .text.SEGGER_RTT_SetNameUpBuffer:00000068 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3471   .text.SEGGER_RTT_SetNameDownBuffer:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3477   .text.SEGGER_RTT_SetNameDownBuffer:00000000 SEGGER_RTT_SetNameDownBuffer
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3576   .text.SEGGER_RTT_SetNameDownBuffer:00000068 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3581   .text.SEGGER_RTT_SetFlagsUpBuffer:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3587   .text.SEGGER_RTT_SetFlagsUpBuffer:00000000 SEGGER_RTT_SetFlagsUpBuffer
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3686   .text.SEGGER_RTT_SetFlagsUpBuffer:00000068 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3691   .text.SEGGER_RTT_SetFlagsDownBuffer:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3697   .text.SEGGER_RTT_SetFlagsDownBuffer:00000000 SEGGER_RTT_SetFlagsDownBuffer
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3796   .text.SEGGER_RTT_SetFlagsDownBuffer:00000068 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3801   .text.SEGGER_RTT_Init:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3807   .text.SEGGER_RTT_Init:00000000 SEGGER_RTT_Init
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3830   .text.SEGGER_RTT_SetTerminal:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3836   .text.SEGGER_RTT_SetTerminal:00000000 SEGGER_RTT_SetTerminal
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3974   .text.SEGGER_RTT_SetTerminal:000000a8 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3982   .text.SEGGER_RTT_TerminalOut:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:3988   .text.SEGGER_RTT_TerminalOut:00000000 SEGGER_RTT_TerminalOut
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:4197   .text.SEGGER_RTT_TerminalOut:0000011c $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:4204   .text.SEGGER_RTT_GetAvailWriteSpace:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:4210   .text.SEGGER_RTT_GetAvailWriteSpace:00000000 SEGGER_RTT_GetAvailWriteSpace
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:4255   .text.SEGGER_RTT_GetAvailWriteSpace:0000002c $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:4260   .text.SEGGER_RTT_GetBytesInBuffer:00000000 $t
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:4266   .text.SEGGER_RTT_GetBytesInBuffer:00000000 SEGGER_RTT_GetBytesInBuffer
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:4358   .text.SEGGER_RTT_GetBytesInBuffer:00000070 $d
-C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s:4363   .rodata._aInitStr.0:00000000 $d
-ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccea1ewu.s 			page 116
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2037   .text.SEGGER_RTT_PutCharSkip:00000000 SEGGER_RTT_PutCharSkip
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2175   .text.SEGGER_RTT_PutCharSkip:00000094 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2180   .text.SEGGER_RTT_PutChar:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2186   .text.SEGGER_RTT_PutChar:00000000 SEGGER_RTT_PutChar
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2341   .text.SEGGER_RTT_PutChar:000000a8 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2346   .text.SEGGER_RTT_GetKey:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2352   .text.SEGGER_RTT_GetKey:00000000 SEGGER_RTT_GetKey
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2408   .text.SEGGER_RTT_WaitKey:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2414   .text.SEGGER_RTT_WaitKey:00000000 SEGGER_RTT_WaitKey
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2455   .text.SEGGER_RTT_HasKey:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2461   .text.SEGGER_RTT_HasKey:00000000 SEGGER_RTT_HasKey
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2529   .text.SEGGER_RTT_HasKey:00000040 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2535   .text.SEGGER_RTT_HasData:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2541   .text.SEGGER_RTT_HasData:00000000 SEGGER_RTT_HasData
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2596   .text.SEGGER_RTT_HasData:00000034 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2601   .text.SEGGER_RTT_HasDataUp:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2607   .text.SEGGER_RTT_HasDataUp:00000000 SEGGER_RTT_HasDataUp
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2662   .text.SEGGER_RTT_HasDataUp:00000034 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2667   .text.SEGGER_RTT_AllocDownBuffer:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2673   .text.SEGGER_RTT_AllocDownBuffer:00000000 SEGGER_RTT_AllocDownBuffer
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2867   .text.SEGGER_RTT_AllocDownBuffer:00000100 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2872   .text.SEGGER_RTT_AllocUpBuffer:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:2878   .text.SEGGER_RTT_AllocUpBuffer:00000000 SEGGER_RTT_AllocUpBuffer
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3074   .text.SEGGER_RTT_AllocUpBuffer:00000104 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3079   .text.SEGGER_RTT_ConfigUpBuffer:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3085   .text.SEGGER_RTT_ConfigUpBuffer:00000000 SEGGER_RTT_ConfigUpBuffer
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3211   .text.SEGGER_RTT_ConfigUpBuffer:00000090 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3216   .text.SEGGER_RTT_ConfigDownBuffer:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3222   .text.SEGGER_RTT_ConfigDownBuffer:00000000 SEGGER_RTT_ConfigDownBuffer
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3356   .text.SEGGER_RTT_ConfigDownBuffer:00000094 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3361   .text.SEGGER_RTT_SetNameUpBuffer:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3367   .text.SEGGER_RTT_SetNameUpBuffer:00000000 SEGGER_RTT_SetNameUpBuffer
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3466   .text.SEGGER_RTT_SetNameUpBuffer:00000068 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3471   .text.SEGGER_RTT_SetNameDownBuffer:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3477   .text.SEGGER_RTT_SetNameDownBuffer:00000000 SEGGER_RTT_SetNameDownBuffer
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3576   .text.SEGGER_RTT_SetNameDownBuffer:00000068 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3581   .text.SEGGER_RTT_SetFlagsUpBuffer:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3587   .text.SEGGER_RTT_SetFlagsUpBuffer:00000000 SEGGER_RTT_SetFlagsUpBuffer
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3686   .text.SEGGER_RTT_SetFlagsUpBuffer:00000068 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3691   .text.SEGGER_RTT_SetFlagsDownBuffer:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3697   .text.SEGGER_RTT_SetFlagsDownBuffer:00000000 SEGGER_RTT_SetFlagsDownBuffer
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3796   .text.SEGGER_RTT_SetFlagsDownBuffer:00000068 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3801   .text.SEGGER_RTT_Init:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3807   .text.SEGGER_RTT_Init:00000000 SEGGER_RTT_Init
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3830   .text.SEGGER_RTT_SetTerminal:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3836   .text.SEGGER_RTT_SetTerminal:00000000 SEGGER_RTT_SetTerminal
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3974   .text.SEGGER_RTT_SetTerminal:000000a8 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3982   .text.SEGGER_RTT_TerminalOut:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:3988   .text.SEGGER_RTT_TerminalOut:00000000 SEGGER_RTT_TerminalOut
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:4197   .text.SEGGER_RTT_TerminalOut:0000011c $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:4204   .text.SEGGER_RTT_GetAvailWriteSpace:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:4210   .text.SEGGER_RTT_GetAvailWriteSpace:00000000 SEGGER_RTT_GetAvailWriteSpace
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:4255   .text.SEGGER_RTT_GetAvailWriteSpace:0000002c $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:4260   .text.SEGGER_RTT_GetBytesInBuffer:00000000 $t
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:4266   .text.SEGGER_RTT_GetBytesInBuffer:00000000 SEGGER_RTT_GetBytesInBuffer
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:4358   .text.SEGGER_RTT_GetBytesInBuffer:00000070 $d
+C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s:4363   .rodata._aInitStr.0:00000000 $d
+ARM GAS  C:\Users\Siddhesh\AppData\Local\Temp\ccJz0B6N.s 			page 116
 
 
                            .group:00000000 wm4.0.f079ee757cd02b273648dd4f0fb0fb55
