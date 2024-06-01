@@ -13,7 +13,7 @@
 ######################################
 # target
 ######################################
-TARGET = mpu6050_test
+TARGET = mpu6050_IIR_Filter
 
 
 ######################################
@@ -40,8 +40,6 @@ Core/Src/main.c \
 Core/Src/stm32f4xx_it.c \
 Core/Src/stm32f4xx_hal_msp.c \
 Core/Src/mpu6050.c \
-Core/Src/SEGGER_RTT_printf.c \
-Core/Src/SEGGER_RTT.c \
 Core/Src/swo.c \
 Core/Src/printf.c \
 Core/Src/IIRFistOrderFilter.c \
